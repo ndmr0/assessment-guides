@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A50203 Understanding User Experience (UX) - Assessment 1</title>
+    <link rel="stylesheet" href="../a50200-user-experience-solutions-assessment-1/styles.css" />
+    <style>
+      .method-table {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+        margin-top: 18px;
+      }
+
+      .method-table div {
+        display: grid;
+        gap: 5px;
+        padding: 14px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: #fbfcfe;
+      }
+
+      .method-table strong {
+        color: var(--ink);
+      }
+
+      @media (max-width: 860px) {
+        .topbar {
+          gap: 12px;
+        }
+
+        .topbar h1 {
+          font-size: 1.1rem;
+        }
+
+        .sidebar nav {
+          max-height: 320px;
+          overflow-y: auto;
+          padding-right: 4px;
+        }
+
+        .method-table {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 540px) {
+        .topbar-actions {
+          position: absolute;
+          right: 16px;
+          top: 16px;
+        }
+
+        .topbar > div:first-of-type {
+          padding-right: 104px;
+        }
+
+        .sidebar {
+          padding: 12px;
+        }
+
+        .sidebar nav {
+          max-height: 260px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to guide</a>
+
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Diploma of User Experience Design</p>
+        <h1>A50203 Understanding User Experience (UX) - Assessment 1</h1>
+        <p class="trainer-mini">Prepared by Nelson David Moncayo, Trainer</p>
+      </div>
+      <div class="trainer-contact-top">
+        <a href="mailto:nmoncayo@apc.edu.au">nmoncayo@apc.edu.au</a>
+        <a href="https://wa.me/6141639788">WhatsApp 041639788</a>
+      </div>
+      <div class="topbar-actions">
+        <button class="icon-button" type="button" data-print title="Print guide" aria-label="Print guide">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M7 8V4h10v4" />
+            <path d="M7 17H5a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+            <path d="M7 14h10v6H7z" />
+          </svg>
+        </button>
+        <button class="icon-button" type="button" data-reset title="Reset checked items" aria-label="Reset checked items">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M3 12a9 9 0 1 0 3-6.7" />
+            <path d="M3 4v6h6" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <aside class="sidebar" aria-label="Guide navigation">
+      <div class="progress-card">
+        <span class="progress-label">Guide progress</span>
+        <div class="progress-track" aria-hidden="true"><span data-progress-bar></span></div>
+        <span class="progress-count" data-progress-count>0 of 0 checked</span>
+      </div>
+      <div class="trainer-card">
+        <span class="trainer-role">Trainer</span>
+        <strong>Nelson David Moncayo</strong>
+        <a href="mailto:nmoncayo@apc.edu.au">nmoncayo@apc.edu.au</a>
+        <a href="https://wa.me/6141639788">WhatsApp 041639788</a>
+      </div>
+      <nav>
+        <a class="nav-main" href="#overview">Overview</a>
+        <a class="nav-main" href="#quick-start">How to use</a>
+        <a class="nav-main" href="#assessment-template">Download template</a>
+        <span class="nav-section">Student support</span>
+        <a class="nav-sub" href="#project-map">Project map</a>
+        <a class="nav-sub" href="#research-bank">Research sources</a>
+        <a class="nav-sub" href="#word-bank">Word bank</a>
+        <a class="nav-sub" href="#ai-rules">AI rules</a>
+        <span class="nav-section">Task 1</span>
+        <a class="nav-task" href="#task-1">Task 1 overview</a>
+        <a class="nav-sub" href="#task-1-q1">Q1 UX concepts</a>
+        <span class="nav-section">Task 2</span>
+        <a class="nav-task" href="#task-2">Task 2 overview</a>
+        <a class="nav-sub" href="#task-2-q1">Q1 Users</a>
+        <a class="nav-sub" href="#task-2-q2">Q2 Personas</a>
+        <a class="nav-sub" href="#task-2-q3">Q3 Journey maps</a>
+        <a class="nav-sub" href="#task-2-q4">Q4 Hypotheses</a>
+        <a class="nav-sub" href="#task-2-q5">Q5 Testing plan</a>
+        <a class="nav-main" href="#submission">Submission check</a>
+      </nav>
+    </aside>
+
+    <main id="main">
+      <section id="overview" class="hero section-panel">
+        <div class="hero-copy">
+          <p class="eyebrow">50% Project | NAT10992001</p>
+          <h2>Assessment 1: Plan, conduct and report UX testing for Facebook and YouTube video features.</h2>
+          <p>
+            This guide helps you complete A50203 Understanding User Experience (UX). You are working as a UX designer for UXAgency, planning usability testing for the video experience on Facebook and YouTube.
+          </p>
+          <p>
+            Use the official wording first, then the explanation and evidence checklist. Your work must be based on real research, your own user analysis, and a realistic testing plan.
+          </p>
+          <div class="trainer-intro">
+            <strong>Trainer: Nelson David Moncayo</strong>
+            <span>Email: <a href="mailto:nmoncayo@apc.edu.au">nmoncayo@apc.edu.au</a></span>
+            <span>WhatsApp: <a href="https://wa.me/6141639788">041639788</a></span>
+          </div>
+          <div id="assessment-template" class="template-callout">
+            <p class="eyebrow">Start Here</p>
+            <h3>Download the official assessment template</h3>
+            <p>Click the Google Doc below, download or make a copy, and complete your assessment in that template before submitting.</p>
+            <a class="button primary" href="https://docs.google.com/document/d/1LZAtWuy28dXTyty3oSlHLOysNmnG2dyKVaPve4_74kQ/edit?usp=drivesdk">Open Google Doc template</a>
+          </div>
+          <p class="ownership-note">
+            This student guide was prepared by Nelson David Moncayo for his students. It is trainer-created support material and must not be copied, reused, or redistributed by another trainer or person without permission.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#assessment-template">Download template</a>
+            <a class="button secondary" href="#task-1">Start Task 1</a>
+            <a class="button secondary" href="#submission">View checklist</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Assessment workflow diagram">
+          <div class="flow-node">
+            <span>1</span>
+            <strong>Understand UX testing</strong>
+            <small>Concepts, personas, hypotheses, journeys, frameworks</small>
+          </div>
+          <div class="flow-line"></div>
+          <div class="flow-node">
+            <span>2</span>
+            <strong>Plan both platform tests</strong>
+            <small>Facebook and YouTube users, tasks, surveys, tools</small>
+          </div>
+          <div class="flow-line"></div>
+          <div class="flow-node">
+            <span>3</span>
+            <strong>Submit clear evidence</strong>
+            <small>Research, personas, journey maps, hypotheses, action plan</small>
+          </div>
+        </div>
+      </section>
+
+      <section id="quick-start" class="section-panel compact">
+        <h2>How To Use This Guide</h2>
+        <div class="three-col">
+          <article class="mini-card">
+            <span class="badge">1</span>
+            <h3>Read the task</h3>
+            <p>Start with the assessment wording. Notice whether you need to research, explain, define, create, map, develop, design, or identify evidence.</p>
+          </article>
+          <article class="mini-card">
+            <span class="badge">2</span>
+            <h3>Use one test focus</h3>
+            <p>Keep the focus on video features. Your user types, personas, journeys, hypotheses, tasks, and surveys should all connect to video use.</p>
+          </article>
+          <article class="mini-card">
+            <span class="badge">3</span>
+            <h3>Check the evidence</h3>
+            <p>Before submitting, check that your answers are research-based, platform-specific, and clearly separated for Facebook and YouTube where required.</p>
+          </article>
+        </div>
+        <div class="plain-steps">
+          <h3>Simple Way To Work Through The Assessment</h3>
+          <div><span>Research</span><p>Collect real demographic and usage information for Facebook and YouTube.</p></div>
+          <div><span>Define</span><p>Separate target market from user types. Target market is who uses the platform; user types are how they behave.</p></div>
+          <div><span>Create</span><p>Create realistic personas and journey maps that match your research and user types.</p></div>
+          <div><span>Test</span><p>Write hypotheses and a testing plan that can actually be run with users.</p></div>
+          <div><span>Submit</span><p>Include the written tables, journey map visuals, and any required evidence listed by your trainer or myAPC.hub.</p></div>
+        </div>
+      </section>
+
+      <section id="project-map" class="section-panel compact">
+        <p class="eyebrow">Student Support</p>
+        <h2>Keep The Project Connected</h2>
+        <p>Every answer should support the same project: testing how users experience video features on Facebook and YouTube.</p>
+        <div class="method-table">
+          <div><strong>Research</strong><span>Use reliable sources to identify who uses Facebook and YouTube.</span></div>
+          <div><strong>User Types</strong><span>Choose behaviour-based groups such as passive viewers, creators, new users, or low-confidence users.</span></div>
+          <div><strong>Personas</strong><span>Create realistic profiles that match the user types and research.</span></div>
+          <div><strong>Journey Maps</strong><span>Show the stages of discovering, watching, interacting, and continuing with video content.</span></div>
+          <div><strong>Hypotheses</strong><span>Write testable predictions based on the journey problems you found.</span></div>
+          <div><strong>Testing Plan</strong><span>Define recruitment criteria, screener questions, test questions, tasks, and tools.</span></div>
+        </div>
+      </section>
+
+      <section id="research-bank" class="section-panel compact">
+        <p class="eyebrow">Student Support</p>
+        <h2>Useful Research Sources</h2>
+        <p>Use current and reliable sources. AI can help you understand terms, but your demographics and platform analysis should come from real sources.</p>
+        <div class="option-grid">
+          <article><h3>Official platform sources</h3><p>Meta, Facebook, Google, YouTube Help, YouTube Blog, and official platform policy or product pages.</p></article>
+          <article><h3>Usage reports</h3><p>Digital reports, social media statistics reports, industry research, and market overview articles.</p></article>
+          <article><h3>User behaviour</h3><p>Articles about video consumption, creator behaviour, short-form video, recommendations, comments, and engagement patterns.</p></article>
+          <article><h3>UX testing methods</h3><p>Nielsen Norman Group, usability testing guides, persona guides, journey mapping guides, and research planning resources.</p></article>
+          <article><h3>Testing tools</h3><p>Google Forms, Microsoft Forms, Zoom, Teams, screen recording tools, Otter.ai, Notion, Figma, FigJam, or Miro.</p></article>
+          <article><h3>Evidence notes</h3><p>Record the title, author or organisation, date, link, and the specific point you used from each source.</p></article>
+        </div>
+      </section>
+
+      <section id="word-bank" class="section-panel compact">
+        <p class="eyebrow">Student Support</p>
+        <h2>Plain-English Word Bank</h2>
+        <div class="word-grid">
+          <div><strong>Target market</strong><span>Broad user characteristics such as age, location, platform use, and demographic trends.</span></div>
+          <div><strong>User type</strong><span>A behaviour-based group, such as passive viewer, content creator, new user, or experienced user.</span></div>
+          <div><strong>Persona</strong><span>A realistic profile representing one user type, based on research and behaviour.</span></div>
+          <div><strong>Customer journey map</strong><span>A visual map of what the user does, thinks, feels, and struggles with across a service experience.</span></div>
+          <div><strong>Hypothesis</strong><span>A clear, testable prediction about user behaviour or a possible UX problem.</span></div>
+          <div><strong>Screener survey</strong><span>Questions used before testing to check whether a participant fits the recruitment criteria.</span></div>
+          <div><strong>Testing task</strong><span>A realistic activity the participant completes while you observe the experience.</span></div>
+          <div><strong>Testing framework</strong><span>The structured plan for participants, tasks, questions, tools, data collection, and reporting.</span></div>
+        </div>
+      </section>
+
+      <section id="ai-rules" class="section-panel compact">
+        <p class="eyebrow">Academic Integrity</p>
+        <h2>AI Rules For This Assessment</h2>
+        <div class="assessment-text">
+          <div class="guide-section-label"><span>Assessment Text</span></div>
+          <blockquote>
+            AI tools may be used to support your process in this assessment. However, you must demonstrate your own research, planning, and testing decisions. AI must not be used to generate your research outputs, personas, or testing plan.
+          </blockquote>
+        </div>
+        <div class="explanation-block">
+          <div class="guide-section-label"><span>Explanation</span></div>
+          <p>You may use AI to clarify UX testing concepts, brainstorm possible structures, improve grammar, or understand general platform trends. You must not use AI to replace your research, invent personas, create journey maps, write hypotheses, or generate the testing plan for you.</p>
+        </div>
+        <div class="evidence-card">
+          <h3>Evidence Checklist</h3>
+          <label><input type="checkbox" data-check /> I can explain every persona, user type, hypothesis, and testing decision in my own words.</label>
+          <label><input type="checkbox" data-check /> My demographics and user types are based on real research sources.</label>
+          <label><input type="checkbox" data-check /> AI was used only for support, not to replace my research or final planning decisions.</label>
+        </div>
+      </section>
+
+      <section id="task-1" class="section-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Task 1</p>
+          <h2>Applied Knowledge For UX Testing</h2>
+        </div>
+        <div class="assessment-text">
+          <div class="guide-section-label"><span>Assessment Text</span></div>
+          <blockquote>
+            Before you begin planning and conducting UX testing, you must understand the key concepts that guide the entire process. These concepts will help you design your research correctly, analyse user behaviour effectively, and interpret results accurately.
+          </blockquote>
+        </div>
+        <div class="explanation-block">
+          <div class="guide-section-label"><span>Explanation</span></div>
+          <p>Task 1 is your foundation. You are proving that you understand the UX testing ideas you will use later. Keep each concept linked to the Facebook and YouTube video testing project.</p>
+        </div>
+        <div class="evidence-card">
+          <h3>Evidence Checklist</h3>
+          <label><input type="checkbox" data-check /> I understand the concepts before starting the detailed testing plan.</label>
+          <label><input type="checkbox" data-check /> I connect concept explanations to Facebook and YouTube video features.</label>
+          <label><input type="checkbox" data-check /> I avoid generic copied definitions that do not relate to this project.</label>
+        </div>
+      </section>
+
+      <section id="task-1-q1" class="section-panel">
+        <p class="eyebrow">Task 1 | Q1</p>
+        <h2>Key UX Concepts For Your Project</h2>
+        <div class="assessment-text">
+          <div class="guide-section-label"><span>Assessment Text</span></div>
+          <blockquote>
+            Research and explain the following UX concepts: creating user personas process; the process of developing hypotheses; the concept of mapping the customer journey; elements of a user experience testing framework; interview transcription techniques and tools. For each concept, explain what it is, how it applies to Facebook and YouTube testing, why it is important for UX testing, and how AI tools can support the process.
+          </blockquote>
+        </div>
+        <div class="explanation-block">
+          <div class="guide-section-label"><span>Explanation</span></div>
+          <p>Use a table if it helps. For each concept, write a practical explanation, not just a definition. Then explain how it helps this specific project. For the AI column, name one tool and describe how it supports your process without doing the work for you.</p>
+          <div class="example-box">
+            <strong>Useful structure:</strong>
+            <p>Concept: [name]. In UX testing this means [plain explanation]. In this project it helps because [Facebook/YouTube video example]. It is important because [testing reason]. AI support: [tool] could help by [support activity], but I would still make the final research and testing decisions myself.</p>
+          </div>
+        </div>
+        <div class="evidence-card">
+          <h3>Evidence Checklist</h3>
+          <label><input type="checkbox" data-check /> I explained all five required UX concepts.</label>
+          <label><input type="checkbox" data-check /> Each concept includes what it is and how it applies to the Facebook and YouTube testing project.</label>
+          <label><input type="checkbox" data-check /> Each concept explains why it matters for UX testing.</label>
+          <label><input type="checkbox" data-check /> Each concept names an AI tool and explains support use only.</label>
+        </div>
+      </section>
+
+      <section id="task-2" class="section-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Task 2</p>
+          <h2>Prepare And Design Your UX Research Plan</h2>
+        </div>
+        <div class="assessment-text">
+          <div class="guide-section-label"><span>Assessment Text</span></div>
+          <blockquote>
+            In this task, you will prepare the full UX research plan for your testing project. You will define who your users are, how they behave, how they interact with Facebook and YouTube, and what problems they may experience.
+          </blockquote>
+        </div>
+        <div class="explanation-block">
+          <div class="guide-section-label"><span>Explanation</span></div>
+          <p>Task 2 turns your knowledge into a practical testing plan. Keep Facebook and YouTube separate when the table asks for both. Make sure your user types, personas, journey maps, hypotheses, and tasks all match each other.</p>
+        </div>
+        <div class="evidence-card">
+          <h3>Evidence Checklist</h3>
+          <label><input type="checkbox" data-check /> I have one clear testing focus: video features on Facebook and YouTube.</label>
+          <label><input type="checkbox" data-check /> I keep the two platforms separate where the assessment asks for separate answers.</label>
+          <label><input type="checkbox" data-check /> My later hypotheses and testing tasks connect to my research and journey maps.</label>
+        </div>
+      </section>
+
+      <section id="task-2-q1" class="section-panel">
+        <p class="eyebrow">Task 2 | Q1</p>
+        <h2>Define Target Market And User Types</h2>
+        <div class="assessment-text">
+          <div class="guide-section-label"><span>Assessment Text</span></div>
+          <blockquote>
+            Research the users of Facebook and YouTube using reliable sources. Identify the target market for each platform and define at least two user types for each platform. The target market refers to general user characteristics such as age groups, location, and usage trends. User types describe how users behave, based on experience, behaviour, and interaction with the platform.
+          </blockquote>
+        </div>
+        <div class="explanation-block">
+          <div class="guide-section-label"><span>Explanation</span></div>
+          <p>This question has two parts. First, complete the platform table with researched target markets and two user types for each platform. Second, explain the criteria for each user type. Do not confuse demographics with behaviour. "18-34 year olds" is target market information; "passive video viewer" is a user type.</p>
+          <div class="example-box">
+            <strong>Good user type language:</strong>
+            <p>Passive viewer, content creator, frequent commenter, short-form video user, low digital literacy user, experienced platform user, new user, mobile-only viewer.</p>
+          </div>
+        </div>
+        <div class="evidence-card">
+          <h3>Evidence Checklist</h3>
+          <label><input type="checkbox" data-check /> I researched both Facebook and YouTube using reliable sources.</label>
+          <label><input type="checkbox" data-check /> I identified a target market for each platform using demographics or usage trends.</label>
+          <label><input type="checkbox" data-check /> I defined at least two behaviour-based user types for Facebook.</label>
+          <label><input type="checkbox" data-check /> I defined at least two behaviour-based user types for YouTube.</label>
+          <label><input type="checkbox" data-check /> I explained the criteria for all four user types.</label>
+        </div>
+      </section>
+
+      <section id="task-2-q2" class="section-panel">
+        <p class="eyebrow">Task 2 | Q2</p>
+        <h2>Create User Personas</h2>
+        <div class="assessment-text">
+          <div class="guide-section-label"><span>Assessment Text</span></div>
+          <blockquote>
+            Create a user persona for each user type. Each persona should be a realistic profile based on behaviour and research. Each persona should reflect how the user behaves, their level of experience, and how they interact with the platform. Include name, age, location, gender, and personality.
+          </blockquote>
+        </div>
+        <div class="explanation-block">
+          <div class="guide-section-label"><span>Explanation</span></div>
+          <p>You need four personas: two for Facebook and two for YouTube. Each persona must match one of your user types from Q1. Keep the persona realistic and useful for testing. The persona should help you decide what tasks, questions, and problems matter for that user.</p>
+          <div class="example-box">
+            <strong>Persona check:</strong>
+            <p>If your user type is "new YouTube user", the persona should not behave like an expert creator. The name, age, experience, goals, and frustrations should all fit the user type.</p>
+          </div>
+        </div>
+        <div class="evidence-card">
+          <h3>Evidence Checklist</h3>
+          <label><input type="checkbox" data-check /> I created one persona for each of the four user types.</label>
+          <label><input type="checkbox" data-check /> Each persona includes name, age, location, gender, and personality.</label>
+          <label><input type="checkbox" data-check /> Each persona describes behaviour, experience level, and platform interaction.</label>
+          <label><input type="checkbox" data-check /> Each persona is realistic and consistent with my research.</label>
+        </div>
+      </section>
+
+      <section id="task-2-q3" class="section-panel">
+        <p class="eyebrow">Task 2 | Q3</p>
+        <h2>Customer Journey Mapping</h2>
+        <div class="assessment-text">
+          <div class="guide-section-label"><span>Assessment Text</span></div>
+          <blockquote>
+            Analyse and visually represent the user journey for the video feature on both platforms. Create one customer journey map for Facebook and one customer journey map for YouTube. The journey should show how a user interacts with the platform from discovering content, watching or interacting with video, and continuing engagement. Submit screenshots or exported visuals created in Figma or a similar tool.
+          </blockquote>
+        </div>
+        <div class="explanation-block">
+          <div class="guide-section-label"><span>Explanation</span></div>
+          <p>This is a visual task. You need two journey maps, one for Facebook and one for YouTube. Each map should show stages, user actions, thoughts or feelings, and problems or frustrations. The problems you identify here should help you write your hypotheses in Q4.</p>
+          <div class="method-table">
+            <div><strong>Discover</strong><span>How does the user find the video?</span></div>
+            <div><strong>Watch</strong><span>What happens while watching?</span></div>
+            <div><strong>Interact</strong><span>Does the user like, comment, share, save, subscribe, or follow?</span></div>
+            <div><strong>Continue</strong><span>What does the user do after the video?</span></div>
+          </div>
+        </div>
+        <div class="evidence-card">
+          <h3>Evidence Checklist</h3>
+          <label><input type="checkbox" data-check /> I created one journey map for Facebook video features.</label>
+          <label><input type="checkbox" data-check /> I created one journey map for YouTube video features.</label>
+          <label><input type="checkbox" data-check /> Each map includes stages, actions, thoughts or feelings, and pain points.</label>
+          <label><input type="checkbox" data-check /> I submitted screenshots or exported visuals from Figma or a similar tool.</label>
+        </div>
+      </section>
+
+      <section id="task-2-q4" class="section-panel">
+        <p class="eyebrow">Task 2 | Q4</p>
+        <h2>Develop UX Hypotheses</h2>
+        <div class="assessment-text">
+          <div class="guide-section-label"><span>Assessment Text</span></div>
+          <blockquote>
+            Create one testable hypothesis for each platform. A hypothesis is a clear statement that predicts user behaviour, identifies a possible issue in the experience, and can be tested during usability testing. Each hypothesis must be based on your research, personas, and customer journey maps.
+          </blockquote>
+        </div>
+        <div class="explanation-block">
+          <div class="guide-section-label"><span>Explanation</span></div>
+          <p>You need two hypotheses: one for Facebook and one for YouTube. A good hypothesis is specific, testable, and linked to a journey map problem. Avoid vague statements like "users do not like the app." State who, what problem, and what you expect to observe during testing.</p>
+          <div class="example-box">
+            <strong>Useful structure:</strong>
+            <p>If [user type] tries to [video task], then they may experience [specific problem] because [reason from research or journey map]. This can be tested by asking participants to [task] and observing [measure or behaviour].</p>
+          </div>
+        </div>
+        <div class="evidence-card">
+          <h3>Evidence Checklist</h3>
+          <label><input type="checkbox" data-check /> I wrote one hypothesis for Facebook.</label>
+          <label><input type="checkbox" data-check /> I wrote one hypothesis for YouTube.</label>
+          <label><input type="checkbox" data-check /> Each hypothesis is linked to research, personas, and journey map pain points.</label>
+          <label><input type="checkbox" data-check /> Each hypothesis can be tested with a realistic usability testing task.</label>
+        </div>
+      </section>
+
+      <section id="task-2-q5" class="section-panel">
+        <p class="eyebrow">Task 2 | Q5</p>
+        <h2>UX Testing Action Plan</h2>
+        <div class="assessment-text">
+          <div class="guide-section-label"><span>Assessment Text</span></div>
+          <blockquote>
+            Plan how your testing sessions will be conducted. Complete the agency action plan for Facebook and YouTube. Define at least three criteria for selecting five users for each platform, design a three-question screener survey, design a three-question testing survey, plan at least two realistic tasks, and identify at least two tools or pieces of equipment.
+          </blockquote>
+        </div>
+        <div class="explanation-block">
+          <div class="guide-section-label"><span>Explanation</span></div>
+          <p>This is your practical testing plan. You are not just listing ideas. You are explaining how you would recruit suitable users, screen them, run the test, ask feedback questions, and collect data. Keep Facebook and YouTube in separate columns if the template asks for it.</p>
+          <div class="method-table">
+            <div><strong>Recruit</strong><span>Who qualifies for each platform test?</span></div>
+            <div><strong>Screen</strong><span>Which three questions confirm they match your criteria?</span></div>
+            <div><strong>Test</strong><span>Which realistic tasks will they complete?</span></div>
+            <div><strong>Measure</strong><span>Which questions and tools will capture evidence?</span></div>
+          </div>
+        </div>
+        <div class="evidence-card">
+          <h3>Evidence Checklist</h3>
+          <label><input type="checkbox" data-check /> I defined at least three participant criteria for Facebook and three for YouTube.</label>
+          <label><input type="checkbox" data-check /> I designed a three-question screener survey for each platform.</label>
+          <label><input type="checkbox" data-check /> I designed a three-question testing survey for each platform.</label>
+          <label><input type="checkbox" data-check /> I planned at least two realistic testing tasks for each platform.</label>
+          <label><input type="checkbox" data-check /> I identified at least two tools or pieces of equipment for each testing session.</label>
+        </div>
+      </section>
+
+      <section id="submission" class="section-panel compact">
+        <p class="eyebrow">Final Check</p>
+        <h2>Before You Submit</h2>
+        <div class="assessment-text">
+          <div class="guide-section-label"><span>Assessment Text</span></div>
+          <blockquote>
+            See the submission checklist under the submission section on myAPC.hub for what needs to be submitted for this assessment.
+          </blockquote>
+        </div>
+        <div class="explanation-block">
+          <div class="guide-section-label"><span>Explanation</span></div>
+          <p>Your final submission should show both your written planning and your visual evidence. Check the official template and myAPC.hub before uploading, because the platform checklist is the final authority for required files.</p>
+        </div>
+        <div class="evidence-card">
+          <h3>Evidence Checklist</h3>
+          <label><input type="checkbox" data-check /> My Task 1 concept table is complete.</label>
+          <label><input type="checkbox" data-check /> My Task 2 target market, user types, criteria, and personas are complete.</label>
+          <label><input type="checkbox" data-check /> My Facebook and YouTube journey map visuals are included or exported.</label>
+          <label><input type="checkbox" data-check /> My two hypotheses are clear, testable, and connected to the journey maps.</label>
+          <label><input type="checkbox" data-check /> My testing action plan includes recruitment criteria, screener questions, testing survey questions, tasks, and tools.</label>
+          <label><input type="checkbox" data-check /> I checked the myAPC.hub submission checklist before uploading.</label>
+        </div>
+      </section>
+    </main>
+
+    <script>
+const checks = Array.from(document.querySelectorAll("[data-check]"));
+const progressBar = document.querySelector("[data-progress-bar]");
+const progressCount = document.querySelector("[data-progress-count]");
+const resetButton = document.querySelector("[data-reset]");
+const printButton = document.querySelector("[data-print]");
+const navLinks = Array.from(document.querySelectorAll(".sidebar nav a"));
+const sections = navLinks
+  .map((link) => document.querySelector(link.getAttribute("href")))
+  .filter(Boolean);
+
+const storageKey = "a50203-understanding-user-experience-ux-assessment-1-checks";
+
+function readState() {
+  try {
+    return JSON.parse(localStorage.getItem(storageKey)) || {};
+  } catch {
+    return {};
+  }
+}
+
+function writeState() {
+  const state = {};
+  checks.forEach((check, index) => {
+    state[index] = check.checked;
+  });
+  localStorage.setItem(storageKey, JSON.stringify(state));
+}
+
+function updateProgress() {
+  const total = checks.length;
+  const done = checks.filter((check) => check.checked).length;
+  const percent = total ? Math.round((done / total) * 100) : 0;
+  if (progressBar) progressBar.style.width = `${percent}%`;
+  if (progressCount) progressCount.textContent = `${done} of ${total} checked`;
+}
+
+function hydrateChecks() {
+  const state = readState();
+  checks.forEach((check, index) => {
+    check.checked = Boolean(state[index]);
+    check.addEventListener("change", () => {
+      writeState();
+      updateProgress();
+    });
+  });
+  updateProgress();
+}
+
+function resetChecks() {
+  checks.forEach((check) => {
+    check.checked = false;
+  });
+  writeState();
+  updateProgress();
+}
+
+function setActiveNav() {
+  const offset = 140;
+  const current = sections.reduce((active, section) => {
+    const top = section.getBoundingClientRect().top;
+    return top <= offset ? section : active;
+  }, sections[0]);
+
+  navLinks.forEach((link) => {
+    link.classList.toggle("active", link.getAttribute("href") === `#${current.id}`);
+  });
+}
+
+hydrateChecks();
+setActiveNav();
+
+window.addEventListener("scroll", setActiveNav, { passive: true });
+resetButton?.addEventListener("click", resetChecks);
+printButton?.addEventListener("click", () => window.print());
+
+    </script>
+  </body>
+</html>
