@@ -340,7 +340,13 @@ li + li {
 .principle-grid,
 .framing-canvas,
 .submission-grid,
-.reflection-grid {
+.reflection-grid,
+.option-grid,
+.word-grid,
+.definition-helper,
+.question-bank,
+.method-picker,
+.kpi-examples {
   display: grid;
   gap: 14px;
 }
@@ -354,7 +360,8 @@ li + li {
 .communication-card,
 .framing-canvas article,
 .submission-grid article,
-.reflection-grid article {
+.reflection-grid article,
+.option-grid article {
   padding: 18px;
   border: 1px solid var(--line);
   background: #fbfcfe;
@@ -416,6 +423,67 @@ li + li {
   color: #23434a;
 }
 
+.plain-steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.plain-steps h3 {
+  grid-column: 1 / -1;
+}
+
+.plain-steps div,
+.helper-strip div,
+.definition-helper div,
+.question-bank div,
+.method-picker div,
+.kpi-examples div,
+.word-grid div {
+  display: grid;
+  gap: 5px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fbfcfe;
+}
+
+.plain-steps span {
+  display: inline-grid;
+  place-items: center;
+  width: max-content;
+  min-width: 72px;
+  min-height: 30px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: #eaf7f3;
+  color: var(--teal);
+  font-weight: 850;
+}
+
+.plain-steps p,
+.helper-strip span,
+.definition-helper span,
+.question-bank span,
+.method-picker span,
+.kpi-examples span,
+.word-grid span {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.option-grid {
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 22px;
+}
+
+.word-grid {
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 22px;
+}
+
 .task-intro {
   background:
     linear-gradient(180deg, rgba(238, 242, 245, 0.75), transparent 70%),
@@ -427,6 +495,13 @@ li + li {
   grid-template-columns: repeat(3, 1fr);
   gap: 14px;
   margin-top: 22px;
+}
+
+.helper-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 18px;
 }
 
 .product-card {
@@ -459,12 +534,22 @@ li + li {
 .check-panel,
 .example-block,
 .question-builder,
-.prompt-card {
+.prompt-card,
+.language-box {
   margin-top: 18px;
   padding: 18px;
   border: 1px solid var(--line);
   background: #f8fafc;
   border-radius: var(--radius);
+}
+
+.language-box {
+  border-left: 4px solid var(--blue);
+  background: #f7fbff;
+}
+
+.language-box p + p {
+  margin-top: 8px;
 }
 
 label {
@@ -511,6 +596,11 @@ input[type="checkbox"] {
 
 .principle-grid {
   grid-template-columns: repeat(5, 1fr);
+}
+
+.definition-helper {
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 18px;
 }
 
 .principle-card:nth-child(1) {
@@ -725,6 +815,24 @@ figcaption {
   margin-top: 18px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
+}
+
+.question-bank,
+.method-picker,
+.kpi-examples {
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 18px;
+}
+
+.question-bank h3,
+.method-picker h3,
+.kpi-examples h3 {
+  grid-column: 1 / -1;
+}
+
+.question-bank .note,
+.method-picker .note {
+  grid-column: 1 / -1;
 }
 
 table {
@@ -1017,7 +1125,11 @@ pre {
   }
 
   .principle-grid,
-  .framing-canvas {
+  .framing-canvas,
+  .definition-helper,
+  .option-grid,
+  .word-grid,
+  .plain-steps {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1057,6 +1169,14 @@ pre {
   }
 
   .three-col,
+  .plain-steps,
+  .option-grid,
+  .word-grid,
+  .helper-strip,
+  .definition-helper,
+  .question-bank,
+  .method-picker,
+  .kpi-examples,
   .split,
   .two-col,
   .method-map,
@@ -1116,6 +1236,7 @@ pre {
   .sidebar nav,
   .principle-grid,
   .framing-canvas,
+  .definition-helper,
   .smart-visual,
   .theme-cluster,
   .ai-workflow {
