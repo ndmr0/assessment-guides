@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A50200 User Experience Solutions - Assessment 1</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to guide</a>
+
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Diploma of User Experience Design</p>
+        <h1>A50200 User Experience Solutions - Assessment 1</h1>
+      </div>
+      <div class="topbar-actions">
+        <button class="icon-button" type="button" data-print title="Print guide" aria-label="Print guide">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M7 8V4h10v4" />
+            <path d="M7 17H5a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+            <path d="M7 14h10v6H7z" />
+          </svg>
+        </button>
+        <button class="icon-button" type="button" data-reset title="Reset checked items" aria-label="Reset checked items">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M3 12a9 9 0 1 0 3-6.7" />
+            <path d="M3 4v6h6" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <aside class="sidebar" aria-label="Guide navigation">
+      <div class="progress-card">
+        <span class="progress-label">Guide progress</span>
+        <div class="progress-track" aria-hidden="true"><span data-progress-bar></span></div>
+        <span class="progress-count" data-progress-count>0 of 0 checked</span>
+      </div>
+      <nav>
+        <a href="#overview">Overview</a>
+        <a href="#ai-rules">AI Rules</a>
+        <a href="#task-1">Task 1</a>
+        <a href="#task-1-q1">T1 Q1 Principles</a>
+        <a href="#task-1-q2">T1 Q2 Consultation</a>
+        <a href="#task-1-q3">T1 Q3 Communication</a>
+        <a href="#task-1-q4">T1 Q4 Methods</a>
+        <a href="#task-2">Task 2</a>
+        <a href="#task-2-q1">T2 Q1 Framing</a>
+        <a href="#task-2-q2">T2 Q2 Research Design</a>
+        <a href="#task-2-q3">T2 Q3 Synthesis</a>
+        <a href="#task-2-q4">T2 Q4 Persona</a>
+        <a href="#task-3">Task 3</a>
+        <a href="#submission">Submission Check</a>
+      </nav>
+    </aside>
+
+    <main id="main">
+      <section id="overview" class="hero section-panel">
+        <div class="hero-copy">
+          <p class="eyebrow">50% Assignment | ICTICT530</p>
+          <h2>Assessment 1: Explore, validate, and prototype a UX solution.</h2>
+          <p>
+            This guide walks students through the assessment question by question. It explains what each
+            response must prove, what evidence to collect, and how to keep Task 1, Task 2, and Task 3 connected.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#task-1">Start Task 1</a>
+            <a class="button secondary" href="#submission">View checklist</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Assessment workflow diagram">
+          <div class="flow-node">
+            <span>1</span>
+            <strong>Understand UX concepts</strong>
+            <small>Apply principles to a real product</small>
+          </div>
+          <div class="flow-line"></div>
+          <div class="flow-node">
+            <span>2</span>
+            <strong>Research real users</strong>
+            <small>Collect, document, and synthesise data</small>
+          </div>
+          <div class="flow-line"></div>
+          <div class="flow-node">
+            <span>3</span>
+            <strong>Prompt and prototype</strong>
+            <small>Iterate prompts, test output, reflect</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-panel compact">
+        <h2>How To Use This Guide</h2>
+        <div class="three-col">
+          <article class="mini-card">
+            <span class="badge">1</span>
+            <h3>Read the target</h3>
+            <p>Each question has a “what assessors look for” block. Use it before writing.</p>
+          </article>
+          <article class="mini-card">
+            <span class="badge">2</span>
+            <h3>Use the frames</h3>
+            <p>Sentence starters and table prompts help structure thinking without supplying final answers.</p>
+          </article>
+          <article class="mini-card">
+            <span class="badge">3</span>
+            <h3>Check the evidence</h3>
+            <p>Tick items as students prepare real examples, research records, screenshots, and prototype proof.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="ai-rules" class="section-panel warning-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Academic Integrity</p>
+          <h2>Permitted AI Use</h2>
+        </div>
+        <div class="split">
+          <article>
+            <h3>AI can support</h3>
+            <ul class="check-list">
+              <li>Clarifying UX concepts and task requirements.</li>
+              <li>Brainstorming possible issues, methods, and question formats.</li>
+              <li>Improving grammar, formatting, and structure.</li>
+              <li>Creating templates that students adapt to their own case study.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>AI cannot replace</h3>
+            <ul class="cross-list">
+              <li>Final assessment answers.</li>
+              <li>Real participant responses.</li>
+              <li>Student-led analysis, insights, personas, or UX decisions.</li>
+              <li>Context-specific justification based on the student’s own project.</li>
+            </ul>
+          </article>
+        </div>
+        <p class="callout">
+          Student rule of thumb: AI can help you prepare and polish. Your selected product, research data,
+          findings, persona, recommendations, and decisions must come from you.
+        </p>
+      </section>
+
+      <section id="task-1" class="task-intro section-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Task 1</p>
+          <h2>Applied Knowledge Questions</h2>
+          <p>
+            Students select one existing digital product and use the same case study across all Task 1 answers.
+            The goal is not to define UX terms in isolation. The goal is to apply them to a real product.
+          </p>
+        </div>
+        <div class="visual-strip">
+          <div class="product-card">
+            <span class="product-icon">A</span>
+            <strong>App</strong>
+            <small>Booking, ordering, banking, fitness, learning</small>
+          </div>
+          <div class="product-card">
+            <span class="product-icon">W</span>
+            <strong>Website</strong>
+            <small>Government, ecommerce, education, transport</small>
+          </div>
+          <div class="product-card">
+            <span class="product-icon">S</span>
+            <strong>Software</strong>
+            <small>CRM, school platform, workplace tool</small>
+          </div>
+        </div>
+        <div class="guidance-box">
+          <h3>Case Study Selection Test</h3>
+          <label><input type="checkbox" data-check /> I have used the product at least twice.</label>
+          <label><input type="checkbox" data-check /> It has a clear user purpose.</label>
+          <label><input type="checkbox" data-check /> I can identify at least two UX issues or frustrations.</label>
+          <label><input type="checkbox" data-check /> It has real users and is not only a concept idea.</label>
+        </div>
+      </section>
+
+      <section id="task-1-q1" class="question section-panel">
+        <div class="question-header">
+          <span class="question-number">T1 Q1</span>
+          <div>
+            <h2>Applying UX Principles and Values</h2>
+            <p>Define each principle, judge whether it succeeds or fails in your product, recommend an improvement, and justify the user impact.</p>
+          </div>
+        </div>
+
+        <div class="principle-grid">
+          <article class="principle-card">
+            <h3>Usefulness</h3>
+            <p>Does the product help users achieve a real goal?</p>
+            <small>Look for: task relevance, missing features, unnecessary steps.</small>
+          </article>
+          <article class="principle-card">
+            <h3>Aesthetics</h3>
+            <p>Does the interface look clear, consistent, and appropriate?</p>
+            <small>Look for: hierarchy, spacing, colour, readability.</small>
+          </article>
+          <article class="principle-card">
+            <h3>Desirability</h3>
+            <p>Does it feel trustworthy, appealing, and worth returning to?</p>
+            <small>Look for: confidence, motivation, tone, emotional response.</small>
+          </article>
+          <article class="principle-card">
+            <h3>Usability</h3>
+            <p>Can users complete tasks easily, efficiently, and with few errors?</p>
+            <small>Look for: navigation, labels, forms, feedback, accessibility.</small>
+          </article>
+          <article class="principle-card">
+            <h3>Function</h3>
+            <p>Do features work reliably and match user expectations?</p>
+            <small>Look for: broken flows, loading, errors, performance.</small>
+          </article>
+        </div>
+
+        <div class="example-block">
+          <h3>How to write one row</h3>
+          <div class="row-example">
+            <span>Principle</span>
+            <p><strong>Usability</strong></p>
+            <span>Current evidence</span>
+            <p>In my selected product, the checkout/search/sign-up flow becomes difficult when users need to...</p>
+            <span>Recommendation</span>
+            <p>Improve the flow by changing the label, grouping related fields, and adding clearer feedback after...</p>
+            <span>Impact</span>
+            <p>This reduces confusion because users can understand the next action before committing time or information.</p>
+          </div>
+          <p class="note">This is a writing structure, not an answer. Students must replace every placeholder with their own product details.</p>
+        </div>
+
+        <div class="check-panel">
+          <h3>Before submitting Q1</h3>
+          <label><input type="checkbox" data-check /> Each principle has a student-written definition.</label>
+          <label><input type="checkbox" data-check /> Each principle is linked to the chosen product.</label>
+          <label><input type="checkbox" data-check /> Each recommendation is specific enough to design.</label>
+          <label><input type="checkbox" data-check /> Each justification explains user impact, not just preference.</label>
+        </div>
+      </section>
+
+      <section id="task-1-q2" class="question section-panel">
+        <div class="question-header">
+          <span class="question-number">T1 Q2</span>
+          <div>
+            <h2>Consultation Techniques Before Design</h2>
+            <p>Plan two ways to consult users or stakeholders before changing the product.</p>
+          </div>
+        </div>
+        <div class="method-map">
+          <article>
+            <h3>Technique option: User interviews</h3>
+            <ol>
+              <li>Recruit participants who match the product’s target users.</li>
+              <li>Prepare open-ended questions about goals, frustrations, and behaviour.</li>
+              <li>Run short sessions and ask follow-up questions.</li>
+              <li>Document exact notes, themes, and quotes.</li>
+              <li>Translate findings into design requirements.</li>
+            </ol>
+          </article>
+          <article>
+            <h3>Technique option: Survey</h3>
+            <ol>
+              <li>Define what you need to learn before writing questions.</li>
+              <li>Mix demographic, behaviour, rating, and open-ended questions.</li>
+              <li>Send to at least three relevant participants.</li>
+              <li>Summarise patterns and contradictions.</li>
+              <li>Use results to prioritise UX issues.</li>
+            </ol>
+          </article>
+        </div>
+        <div class="illustration-card">
+          <div class="visual-example transcript-visual" role="img" aria-label="Interview notes and transcription example">
+            <span></span><span></span><span></span>
+            <strong>User quote</strong>
+            <small>Pain point</small>
+            <small>Need</small>
+          </div>
+          <div>
+            <h3>Question prompts students can adapt</h3>
+            <ul>
+              <li>“Tell me about the last time you used this product to complete...”</li>
+              <li>“Where did the process feel slow, confusing, or unnecessary?”</li>
+              <li>“What would make you trust this product more?”</li>
+              <li>“What would you do if this product did not work?”</li>
+            </ul>
+          </div>
+        </div>
+        <div class="check-panel">
+          <h3>Before submitting Q2</h3>
+          <label><input type="checkbox" data-check /> Two consultation techniques are named clearly.</label>
+          <label><input type="checkbox" data-check /> Steps explain how each technique will be conducted.</label>
+          <label><input type="checkbox" data-check /> Participants include at least two participant types and at least three people total.</label>
+          <label><input type="checkbox" data-check /> Each technique has at least three example questions or prompts.</label>
+          <label><input type="checkbox" data-check /> Expected insights are linked to future UX decisions.</label>
+        </div>
+      </section>
+
+      <section id="task-1-q3" class="question section-panel">
+        <div class="question-header">
+          <span class="question-number">T1 Q3</span>
+          <div>
+            <h2>Communication Techniques After Design</h2>
+            <p>Explain how a proposed improvement would be communicated to audiences such as clients, developers, stakeholders, or users.</p>
+          </div>
+        </div>
+
+        <div class="two-col">
+          <article class="communication-card">
+            <span class="badge">Method</span>
+            <h3>Prototype walkthrough</h3>
+            <p><strong>Best for:</strong> clients, users, and stakeholders who need to see the changed experience.</p>
+            <p><strong>Artefacts:</strong> clickable prototype, user flow, annotated screens, issue-to-solution notes.</p>
+            <p><strong>Structure:</strong> problem recap, design goal, before/after flow, key screens, feedback request.</p>
+          </article>
+          <article class="communication-card">
+            <span class="badge">Method</span>
+            <h3>Design handoff pack</h3>
+            <p><strong>Best for:</strong> developers or product teams who need to build the improvement.</p>
+            <p><strong>Artefacts:</strong> wireframes, component notes, acceptance criteria, interaction states.</p>
+            <p><strong>Structure:</strong> context, requirements, screen specs, behaviours, constraints, open questions.</p>
+          </article>
+        </div>
+        <div class="tip-grid">
+          <div>
+            <strong>For executives</strong>
+            <span>Lead with user impact, risk, cost, and expected outcomes.</span>
+          </div>
+          <div>
+            <strong>For developers</strong>
+            <span>Lead with states, data, interactions, constraints, and edge cases.</span>
+          </div>
+          <div>
+            <strong>For users</strong>
+            <span>Lead with clarity, task flow, what changed, and how to give feedback.</span>
+          </div>
+        </div>
+        <div class="check-panel">
+          <h3>Before submitting Q3</h3>
+          <label><input type="checkbox" data-check /> Two communication methods are named and described.</label>
+          <label><input type="checkbox" data-check /> Each method has a specific target audience.</label>
+          <label><input type="checkbox" data-check /> Artefacts are listed exactly, not vaguely.</label>
+          <label><input type="checkbox" data-check /> The structure explains the order of information.</label>
+          <label><input type="checkbox" data-check /> The reason for each method matches the audience’s needs.</label>
+        </div>
+      </section>
+
+      <section id="task-1-q4" class="question section-panel">
+        <div class="question-header">
+          <span class="question-number">T1 Q4</span>
+          <div>
+            <h2>UX Methodologies and Techniques in Practice</h2>
+            <p>Apply three UX methods to the case study. At least one must relate to research and one to design or testing.</p>
+          </div>
+        </div>
+        <div class="illustration-grid">
+          <figure>
+            <div class="visual-example journey-visual" role="img" aria-label="Customer journey map example">
+              <span>Discover</span><span>Try</span><span>Blocker</span><span>Support</span>
+            </div>
+            <figcaption>Journey mapping: shows stages, emotions, pain points, and opportunities.</figcaption>
+          </figure>
+          <figure>
+            <div class="visual-example testing-visual" role="img" aria-label="UX testing framework example">
+              <span>Task</span><span>Observe</span><span>Issue</span><span>Fix</span>
+            </div>
+            <figcaption>Usability testing: checks whether real users can complete tasks.</figcaption>
+          </figure>
+          <figure>
+            <div class="visual-example persona-visual" role="img" aria-label="Persona process example">
+              <span class="persona-head"></span>
+              <span>Goals</span><span>Needs</span><span>Frustrations</span>
+            </div>
+            <figcaption>Personas: translate research patterns into a realistic user profile.</figcaption>
+          </figure>
+        </div>
+        <div class="method-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Method</th>
+                <th>Use it when students need to...</th>
+                <th>Typical deliverable</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Interview</td>
+                <td>Understand motivations, frustrations, and context.</td>
+                <td>Question guide, notes, quotes, themes.</td>
+              </tr>
+              <tr>
+                <td>Market segmentation</td>
+                <td>Separate users by needs, behaviours, or contexts.</td>
+                <td>Segment table and priority user group.</td>
+              </tr>
+              <tr>
+                <td>Journey map</td>
+                <td>Find problems across a complete experience.</td>
+                <td>Stage-by-stage map with pain points.</td>
+              </tr>
+              <tr>
+                <td>Wireframe</td>
+                <td>Explore a design change before visual polish.</td>
+                <td>Low-fidelity screen layout.</td>
+              </tr>
+              <tr>
+                <td>Usability test</td>
+                <td>Validate whether the design works with users.</td>
+                <td>Task script, observations, success rate, issues.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="check-panel">
+          <h3>Before submitting Q4</h3>
+          <label><input type="checkbox" data-check /> Three methods are defined in the student’s own words.</label>
+          <label><input type="checkbox" data-check /> Each method is applied to the selected product specifically.</label>
+          <label><input type="checkbox" data-check /> Each method has a named output or deliverable.</label>
+          <label><input type="checkbox" data-check /> At least one method is research-based.</label>
+          <label><input type="checkbox" data-check /> At least one method is design or testing-based.</label>
+        </div>
+      </section>
+
+      <section id="task-2" class="task-intro section-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Task 2</p>
+          <h2>UX Design Project</h2>
+          <p>
+            Students define a UX project connected to a real social issue, design research, collect responses,
+            synthesise findings, and create a persona based on real data.
+          </p>
+        </div>
+        <div class="process-ladder">
+          <div><span>Problem definition</span><small>What is happening, why it matters, who is affected</small></div>
+          <div><span>Research design</span><small>Method, participants, questions, purpose</small></div>
+          <div><span>Findings</span><small>Raw data, patterns, problems, needs, implications</small></div>
+          <div><span>Persona</span><small>A realistic profile grounded in research</small></div>
+        </div>
+      </section>
+
+      <section id="task-2-q1" class="question section-panel">
+        <div class="question-header">
+          <span class="question-number">T2 Q1</span>
+          <div>
+            <h2>Project Definition and Problem Framing</h2>
+            <p>Define the social issue, user problem, target users, alternatives, success measures, SMART goal, and KPIs.</p>
+          </div>
+        </div>
+        <div class="framing-canvas">
+          <article>
+            <h3>1. Project overview</h3>
+            <p>Project name, type, social issue, and realistic context.</p>
+          </article>
+          <article>
+            <h3>2. UX problem</h3>
+            <p>What is currently happening? Why is it a problem? Who is affected?</p>
+          </article>
+          <article>
+            <h3>3. Target users</h3>
+            <p>Age, background, needs, behaviours, and context of use.</p>
+          </article>
+          <article>
+            <h3>4. Justification</h3>
+            <p>Why it matters, impact on users or society, risks if ignored.</p>
+          </article>
+          <article>
+            <h3>5. Alternatives</h3>
+            <p>Two direct solutions and two indirect alternatives, with strengths and gaps.</p>
+          </article>
+          <article>
+            <h3>6. Success</h3>
+            <p>What improves, what outcomes are expected, and how success is observed.</p>
+          </article>
+          <article>
+            <h3>7. SMART goal</h3>
+            <p>Specific, measurable, achievable, relevant, and time-bound.</p>
+          </article>
+          <article>
+            <h3>8. KPIs</h3>
+            <p>At least two measurable indicators with a measurement method.</p>
+          </article>
+        </div>
+        <div class="smart-visual" aria-label="SMART goal formula">
+          <span>S specific</span>
+          <span>M measurable</span>
+          <span>A achievable</span>
+          <span>R relevant</span>
+          <span>T time-bound</span>
+        </div>
+        <div class="example-block">
+          <h3>SMART goal frame</h3>
+          <p>
+            “Within <strong>[timeframe]</strong>, improve <strong>[specific user task]</strong> for
+            <strong>[target user group]</strong> by <strong>[measurable change]</strong>, measured through
+            <strong>[survey / task completion / error rate / observation]</strong>.”
+          </p>
+        </div>
+        <div class="check-panel">
+          <h3>Before submitting T2 Q1</h3>
+          <label><input type="checkbox" data-check /> The project is realistic and connected to a real social issue.</label>
+          <label><input type="checkbox" data-check /> The problem statement names what happens, why it matters, and who is affected.</label>
+          <label><input type="checkbox" data-check /> Direct and indirect alternatives include strengths and limitations.</label>
+          <label><input type="checkbox" data-check /> Success definition is observable, not only aspirational.</label>
+          <label><input type="checkbox" data-check /> KPIs are measurable and connected to the UX problem.</label>
+        </div>
+      </section>
+
+      <section id="task-2-q2" class="question section-panel">
+        <div class="question-header">
+          <span class="question-number">T2 Q2</span>
+          <div>
+            <h2>User Research Design</h2>
+            <p>Select a research method, define five suitable participants, and create at least ten purposeful questions.</p>
+          </div>
+        </div>
+        <div class="research-flow">
+          <div><strong>Choose method</strong><span>Survey, interview, or mixed-method</span></div>
+          <div><strong>Recruit users</strong><span>Five people matching the target group</span></div>
+          <div><strong>Write questions</strong><span>Each question has a clear purpose</span></div>
+          <div><strong>Collect data</strong><span>Use real answers, not AI-generated responses</span></div>
+        </div>
+        <div class="two-col">
+          <article class="mini-card">
+            <h3>Good research questions</h3>
+            <ul>
+              <li>Ask about recent behaviour, not only opinion.</li>
+              <li>Use plain language.</li>
+              <li>Avoid leading users toward the “right” answer.</li>
+              <li>Connect to the problem and future design decisions.</li>
+            </ul>
+          </article>
+          <article class="mini-card">
+            <h3>Weak research questions</h3>
+            <ul>
+              <li>“Do you like my idea?”</li>
+              <li>“Wouldn’t it be better if the app was simpler?”</li>
+              <li>“Do you agree this is a serious problem?”</li>
+              <li>“What features should I build?” without context.</li>
+            </ul>
+          </article>
+        </div>
+        <div class="question-builder">
+          <h3>10-question planning pattern</h3>
+          <div class="chips">
+            <span>1-2: Who they are</span>
+            <span>3-4: Current behaviour</span>
+            <span>5-6: Pain points</span>
+            <span>7-8: Needs and expectations</span>
+            <span>9: Existing alternatives</span>
+            <span>10: Success or preference</span>
+          </div>
+        </div>
+        <div class="check-panel">
+          <h3>Before submitting T2 Q2</h3>
+          <label><input type="checkbox" data-check /> One research method is selected and justified.</label>
+          <label><input type="checkbox" data-check /> Five participants match the target users from Q1.</label>
+          <label><input type="checkbox" data-check /> Ten questions are written clearly.</label>
+          <label><input type="checkbox" data-check /> Every question includes its purpose.</label>
+          <label><input type="checkbox" data-check /> Questions can generate evidence for Q3 and Q4.</label>
+        </div>
+      </section>
+
+      <section id="task-2-q3" class="question section-panel">
+        <div class="question-header">
+          <span class="question-number">T2 Q3</span>
+          <div>
+            <h2>Research Findings and Synthesis</h2>
+            <p>Document raw responses from five users, then identify patterns, problems, needs, and UX implications.</p>
+          </div>
+        </div>
+        <div class="synthesis-board" aria-label="Synthesis process">
+          <div class="data-stack">
+            <span>User 1</span><span>User 2</span><span>User 3</span><span>User 4</span><span>User 5</span>
+          </div>
+          <div class="arrow" aria-hidden="true"></div>
+          <div class="theme-cluster">
+            <span>Repeated issue</span>
+            <span>Shared need</span>
+            <span>Contradiction</span>
+            <span>Opportunity</span>
+          </div>
+          <div class="arrow" aria-hidden="true"></div>
+          <div class="implication-card">
+            <strong>UX implication</strong>
+            <small>What the design should consider next</small>
+          </div>
+        </div>
+        <div class="example-block">
+          <h3>Insight writing formula</h3>
+          <p>
+            “A pattern across the data is <strong>[finding]</strong>. This is supported by
+            <strong>[number or quote evidence]</strong>. The UX implication is that the solution should
+            <strong>[design consequence]</strong>.”
+          </p>
+        </div>
+        <div class="check-panel">
+          <h3>Before submitting T2 Q3</h3>
+          <label><input type="checkbox" data-check /> Raw data table includes responses from five real users.</label>
+          <label><input type="checkbox" data-check /> At least three patterns or insights are identified.</label>
+          <label><input type="checkbox" data-check /> At least two major user problems are identified.</label>
+          <label><input type="checkbox" data-check /> At least two user needs or expectations are identified.</label>
+          <label><input type="checkbox" data-check /> Each insight includes supporting evidence and a UX implication.</label>
+        </div>
+      </section>
+
+      <section id="task-2-q4" class="question section-panel">
+        <div class="question-header">
+          <span class="question-number">T2 Q4</span>
+          <div>
+            <h2>User Persona Development</h2>
+            <p>Create one realistic persona based on research findings, not assumptions.</p>
+          </div>
+        </div>
+        <div class="persona-layout">
+          <aside class="persona-card" aria-label="Persona card example">
+            <div class="avatar" aria-hidden="true">U</div>
+            <h3>[Research-based name]</h3>
+            <p class="quote">“Use one short quote that reflects the research.”</p>
+            <dl>
+              <dt>Age</dt><dd>[from participant pattern]</dd>
+              <dt>Background</dt><dd>[relevant context]</dd>
+              <dt>Location</dt><dd>[realistic setting]</dd>
+            </dl>
+          </aside>
+          <div class="persona-details">
+            <div><strong>Goals</strong><span>What the user is trying to achieve.</span></div>
+            <div><strong>Needs</strong><span>What support or information they require.</span></div>
+            <div><strong>Frustrations</strong><span>Evidence-backed pain points.</span></div>
+            <div><strong>Behaviours</strong><span>How they currently act or work around the problem.</span></div>
+            <div><strong>Motivations</strong><span>Why solving the issue matters to them.</span></div>
+            <div><strong>Preferred solutions</strong><span>What kind of help they are likely to accept.</span></div>
+            <div><strong>Technology use</strong><span>Devices, confidence, access, constraints.</span></div>
+            <div><strong>Communication style</strong><span>How they prefer information or support.</span></div>
+          </div>
+        </div>
+        <div class="check-panel">
+          <h3>Before submitting T2 Q4</h3>
+          <label><input type="checkbox" data-check /> Persona content is traceable to research findings.</label>
+          <label><input type="checkbox" data-check /> Persona is internally consistent and realistic.</label>
+          <label><input type="checkbox" data-check /> Goals, needs, frustrations, and behaviours are specific.</label>
+          <label><input type="checkbox" data-check /> Preferred solutions connect to the UX opportunity.</label>
+        </div>
+      </section>
+
+      <section id="task-3" class="task-intro section-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Task 3</p>
+          <h2>Prompt Engineering and AI-Assisted UX Prototype Development</h2>
+          <p>
+            Students use one prompt development tool and one prototype/MVP tool. The assessment is about
+            iterative prompting, evaluation, evidence, and human judgement.
+          </p>
+        </div>
+        <div class="ai-workflow">
+          <div>Initial prompt</div>
+          <div>Test output</div>
+          <div>Evaluate</div>
+          <div>Refine 1</div>
+          <div>Refine 2</div>
+          <div>Refine 3</div>
+          <div>Prototype</div>
+          <div>Reflect</div>
+        </div>
+      </section>
+
+      <section class="question section-panel">
+        <div class="question-header">
+          <span class="question-number">T3 Q1-Q2</span>
+          <div>
+            <h2>Tool Selection and Initial Prompt</h2>
+            <p>Explain what each tool is for, how they work together, and write an initial prompt grounded in Task 2.</p>
+          </div>
+        </div>
+        <div class="prompt-card">
+          <h3>Initial prompt structure</h3>
+          <pre><code>Context:
+I am designing a UX solution for [target users] who experience [problem from Task 2].
+
+Goal:
+Create [interface / flow / prototype concept] that helps users [task or outcome].
+
+Requirements:
+- Include [key screens or features]
+- Prioritise [needs from research]
+- Use a tone and layout suitable for [user context]
+- Avoid [risks or constraints]
+
+Output:
+Provide [wireframe description / screen list / user flow / prototype prompt / code brief].</code></pre>
+        </div>
+        <div class="check-panel">
+          <h3>Before submitting T3 Q1-Q2</h3>
+          <label><input type="checkbox" data-check /> One prompt development tool is named and explained.</label>
+          <label><input type="checkbox" data-check /> One prototype/MVP tool is named and explained.</label>
+          <label><input type="checkbox" data-check /> The intended prototype is based on Task 2.</label>
+          <label><input type="checkbox" data-check /> Initial prompt includes context, instructions, and expected output.</label>
+        </div>
+      </section>
+
+      <section class="question section-panel">
+        <div class="question-header">
+          <span class="question-number">T3 Q3-Q4</span>
+          <div>
+            <h2>Prompt Iteration and Prototype Evidence</h2>
+            <p>Record at least three prompt iterations, then use the best prompt in a prototype/MVP tool and capture evidence.</p>
+          </div>
+        </div>
+        <div class="iteration-table">
+          <div><strong>Prompt version</strong><span>What changed in the wording or detail?</span></div>
+          <div><strong>Summary of output</strong><span>What did the AI produce?</span></div>
+          <div><strong>What improved</strong><span>What became clearer, more usable, or more relevant?</span></div>
+          <div><strong>Still needs work</strong><span>What is inaccurate, missing, generic, or risky?</span></div>
+        </div>
+        <div class="evidence-strip">
+          <div><span>Screenshot</span><small>Prompt entered</small></div>
+          <div><span>Screenshot</span><small>AI output</small></div>
+          <div><span>Screenshot</span><small>Prototype screen</small></div>
+          <div><span>Notes</span><small>Evaluation and changes</small></div>
+        </div>
+        <div class="check-panel">
+          <h3>Before submitting T3 Q3-Q4</h3>
+          <label><input type="checkbox" data-check /> Three iterations are documented.</label>
+          <label><input type="checkbox" data-check /> Each iteration explains output, improvement, and remaining issue.</label>
+          <label><input type="checkbox" data-check /> Prototype evidence is included as screenshots, link, code, or screen descriptions.</label>
+          <label><input type="checkbox" data-check /> The final concept is relevant to the Task 2 problem and users.</label>
+        </div>
+      </section>
+
+      <section class="question section-panel">
+        <div class="question-header">
+          <span class="question-number">T3 Q5</span>
+          <div>
+            <h2>Reflection on Prompt Engineering</h2>
+            <p>Reflect on learning, improvements, challenges, AI support, and why human judgement mattered.</p>
+          </div>
+        </div>
+        <div class="reflection-grid">
+          <article><h3>What I learned</h3><p>Describe how prompt detail changed the usefulness of output.</p></article>
+          <article><h3>What improved</h3><p>Compare early and final outputs using specific examples.</p></article>
+          <article><h3>Challenges</h3><p>Identify issues such as generic results, missing context, or unrealistic features.</p></article>
+          <article><h3>AI support</h3><p>Explain how tools helped structure, generate, or prototype ideas.</p></article>
+          <article><h3>Human judgement</h3><p>Explain decisions students made from research and assessment needs.</p></article>
+        </div>
+      </section>
+
+      <section id="submission" class="section-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Final Check</p>
+          <h2>Submission Readiness</h2>
+          <p>Use this as the last pass before uploading to myAPC.hub.</p>
+        </div>
+        <div class="submission-grid">
+          <article>
+            <h3>Task 1</h3>
+            <label><input type="checkbox" data-check /> Same case study used across all questions.</label>
+            <label><input type="checkbox" data-check /> Product table completed.</label>
+            <label><input type="checkbox" data-check /> Q1-Q4 responses include specific examples and reasoning.</label>
+          </article>
+          <article>
+            <h3>Task 2</h3>
+            <label><input type="checkbox" data-check /> Project addresses a realistic social issue.</label>
+            <label><input type="checkbox" data-check /> Research instrument and participant details included.</label>
+            <label><input type="checkbox" data-check /> Raw data, synthesis, and persona are based on real participants.</label>
+          </article>
+          <article>
+            <h3>Task 3</h3>
+            <label><input type="checkbox" data-check /> Two AI tools are identified.</label>
+            <label><input type="checkbox" data-check /> Prompt iterations are documented with outputs and evaluation.</label>
+            <label><input type="checkbox" data-check /> Prototype evidence and reflection are included.</label>
+          </article>
+        </div>
+        <div class="final-message">
+          <strong>Best evidence pattern:</strong>
+          <span>Every major claim should point to a product observation, participant response, screenshot, prototype output, or design decision.</span>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
