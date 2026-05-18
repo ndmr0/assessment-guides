@@ -1,0 +1,876 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A50202 Interface Design and Development - Assessment 1</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to guide</a>
+
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Diploma of User Experience Design</p>
+        <h1>A50202 Interface Design and Development - Assessment 1</h1>
+        <p class="trainer-mini">Prepared by Nelson David Moncayo, Trainer</p>
+      </div>
+      <div class="trainer-contact-top">
+        <a href="mailto:nmoncayo@apc.edu.au">nmoncayo@apc.edu.au</a>
+        <a href="https://wa.me/6141639788">WhatsApp 041639788</a>
+      </div>
+      <div class="topbar-actions">
+        <button class="icon-button" type="button" data-print title="Print guide" aria-label="Print guide">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M7 8V4h10v4" />
+            <path d="M7 17H5a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+            <path d="M7 14h10v6H7z" />
+          </svg>
+        </button>
+        <button class="icon-button" type="button" data-reset title="Reset checked items" aria-label="Reset checked items">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M3 12a9 9 0 1 0 3-6.7" />
+            <path d="M3 4v6h6" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <aside class="sidebar" aria-label="Guide navigation">
+      <div class="progress-card">
+        <span class="progress-label">Guide progress</span>
+        <div class="progress-track" aria-hidden="true"><span data-progress-bar></span></div>
+        <span class="progress-count" data-progress-count>0 of 0 checked</span>
+      </div>
+      <div class="trainer-card">
+        <span class="trainer-role">Trainer</span>
+        <strong>Nelson David Moncayo</strong>
+        <a href="mailto:nmoncayo@apc.edu.au">nmoncayo@apc.edu.au</a>
+        <a href="https://wa.me/6141639788">WhatsApp 041639788</a>
+      </div>
+      <nav>
+        <a class="nav-main" href="#overview">Overview</a>
+        <a class="nav-main" href="#quick-start">How to use</a>
+        <a class="nav-main" href="#assessment-template">Download template</a>
+        <span class="nav-section">Student support</span>
+        <a class="nav-sub" href="#app-options">App options</a>
+        <a class="nav-sub" href="#tool-options">Tool options</a>
+        <a class="nav-sub" href="#word-bank">Word bank</a>
+        <a class="nav-sub" href="#ai-rules">AI rules</a>
+        <span class="nav-section">Task 1</span>
+        <a class="nav-task" href="#task-1">Task 1 overview</a>
+        <a class="nav-sub" href="#task-1-q1">Q1 Golden Ratio</a>
+        <a class="nav-sub" href="#task-1-q2">Q2 Rule of Thirds</a>
+        <a class="nav-sub" href="#task-1-q3">Q3 HTML elements</a>
+        <a class="nav-sub" href="#task-1-q4">Q4 Open-source tools</a>
+        <span class="nav-section">Task 2</span>
+        <a class="nav-task" href="#task-2">Task 2 overview</a>
+        <a class="nav-sub" href="#task-2-q1">Q1 App analysis</a>
+        <a class="nav-sub" href="#task-2-q2">Q2 UI requirements</a>
+        <a class="nav-sub" href="#task-2-q3">Q3 AI prototype</a>
+        <a class="nav-sub" href="#task-2-q4">Q4 Prototype evidence</a>
+        <span class="nav-section">Task 3</span>
+        <a class="nav-task" href="#task-3">Task 3 overview</a>
+        <a class="nav-sub" href="#task-3-q1">Q1 Content flow</a>
+        <a class="nav-sub" href="#task-3-q2">Q2 Website build</a>
+        <a class="nav-main" href="#submission">Submission check</a>
+      </nav>
+    </aside>
+
+    <main id="main">
+      <section id="overview" class="hero section-panel">
+        <div class="hero-copy">
+          <p class="eyebrow">50% Project | ICTPRG437</p>
+          <h2>Assessment 1: Build user interfaces.</h2>
+          <p>
+            This guide helps you complete Assessment 1 for A50202 Interface Design and Development. It explains each task in plain English, keeps the original assessment wording visible, and shows the evidence students need to submit.
+          </p>
+          <p>
+            In this assessment you explain key UI design concepts, analyse and improve a mobile app interface, use an AI-powered prototyping tool with documented prompting, and build a two-page website with a landing page and sign-up page.
+          </p>
+          <div class="trainer-intro">
+            <strong>Trainer: Nelson David Moncayo</strong>
+            <span>Email: <a href="mailto:nmoncayo@apc.edu.au">nmoncayo@apc.edu.au</a></span>
+            <span>WhatsApp: <a href="https://wa.me/6141639788">041639788</a></span>
+          </div>
+          <div id="assessment-template" class="template-callout">
+            <p class="eyebrow">Start Here</p>
+            <h3>Download the official assessment template</h3>
+            <p>Click the Google Doc below, download or make a copy, and complete your assessment in the template you will submit.</p>
+            <a class="button primary" href="https://docs.google.com/document/d/1qOCZ3Q3jqWdZKETrSmEhiaefgkvEX0UsX6Y8MSpHttQ/edit?usp=drivesdk">Open Google Doc template</a>
+          </div>
+          <p class="ownership-note">
+            This student guide was prepared by Nelson David Moncayo for his students. It is trainer-created support material and must not be copied, reused, or redistributed by another trainer or person without permission.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#assessment-template">Download template</a>
+            <a class="button secondary" href="#task-1">Start Task 1</a>
+            <a class="button secondary" href="#submission">View checklist</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Assessment workflow diagram">
+          <div class="flow-node">
+            <span>1</span>
+            <strong>Explain UI foundations</strong>
+            <small>Golden Ratio, Rule of Thirds, HTML, open-source tools</small>
+          </div>
+          <div class="flow-line"></div>
+          <div class="flow-node">
+            <span>2</span>
+            <strong>Improve a mobile app UI</strong>
+            <small>Analyse, define requirements, prototype, refine with feedback</small>
+          </div>
+          <div class="flow-line"></div>
+          <div class="flow-node">
+            <span>3</span>
+            <strong>Build a two-page website</strong>
+            <small>Landing page, sign-up page, branding, media, clear CTA</small>
+          </div>
+        </div>
+      </section>
+
+      <section id="quick-start" class="section-panel compact">
+        <h2>How To Use This Guide</h2>
+        <div class="three-col">
+          <article class="mini-card">
+            <span class="badge">1</span>
+            <h3>Read the task</h3>
+            <p>Start with the exact assessment text. Notice the action words such as explain, select, apply, provide, build, document, present, and submit.</p>
+          </article>
+          <article class="mini-card">
+            <span class="badge">2</span>
+            <h3>Follow the tips</h3>
+            <p>Use the explanation, examples, and options to plan your own response. The guide supports your thinking but does not replace your own design decisions.</p>
+          </article>
+          <article class="mini-card">
+            <span class="badge">3</span>
+            <h3>Check the evidence</h3>
+            <p>Before submitting, check word counts, screenshots, links, client feedback, prototype iterations, and website pages.</p>
+          </article>
+        </div>
+        <div class="plain-steps">
+          <h3>Simple Process For Each Question</h3>
+          <div><span>Read</span><p>Read the assessment wording first.</p></div>
+          <div><span>Choose</span><p>Choose your app, tool, image, tags, or website idea.</p></div>
+          <div><span>Show</span><p>Add real screenshots, links, grids, prompts, or prototype evidence.</p></div>
+          <div><span>Explain</span><p>Write in your own words and connect choices to UI quality.</p></div>
+          <div><span>Check</span><p>Use the evidence checklist before submitting.</p></div>
+        </div>
+      </section>
+
+      <section id="app-options" class="section-panel compact">
+        <p class="eyebrow">Student Support</p>
+        <h2>Mobile App Options For Task 2</h2>
+        <p>Choose an app you have personally used at least twice. You need real screenshots and real UI issues, so choose something you can inspect carefully.</p>
+        <div class="option-grid">
+          <article><h3>Food or ordering</h3><p>Menu layout, checkout, delivery tracking, filters, item cards, readability.</p></article>
+          <article><h3>Transport</h3><p>Trip planning, maps, service alerts, ticket purchase, timetable clarity.</p></article>
+          <article><h3>Banking or finance</h3><p>Navigation, account overview, transaction search, forms, accessibility.</p></article>
+          <article><h3>Learning</h3><p>Course navigation, lesson cards, progress tracking, notifications, resources.</p></article>
+          <article><h3>Health or booking</h3><p>Appointment flow, provider information, reminders, form clarity.</p></article>
+          <article><h3>Shopping</h3><p>Search, filters, product comparison, cart, payment flow.</p></article>
+          <article><h3>Government or services</h3><p>Forms, identity steps, content hierarchy, error messages.</p></article>
+          <article><h3>Entertainment</h3><p>Home feed, categories, media controls, recommendations, sign-up flow.</p></article>
+        </div>
+        <div class="note">A good choice is not the "worst" app. A good choice is an app where you can clearly identify at least two specific interface improvements and show them with screenshots.</div>
+      </section>
+
+      <section id="tool-options" class="section-panel compact">
+        <p class="eyebrow">Student Support</p>
+        <h2>Tool Options</h2>
+        <div class="method-picker">
+          <h3>Prototype and Website Tools</h3>
+          <div><strong>Replit</strong><span>Good for a working prototype with code, preview, and shareable link.</span></div>
+          <div><strong>Lovable</strong><span>Good for beginner-friendly prompt-to-interface generation.</span></div>
+          <div><strong>Bolt</strong><span>Good for fast front-end generation and iterative UI changes.</span></div>
+          <div><strong>Figma or Canva</strong><span>Useful for manual UI mockups, annotations, and visual planning.</span></div>
+          <div><strong>Google Sites</strong><span>Simple option for Task 3 website with two pages and a published link.</span></div>
+          <div><strong>Wix or Webflow</strong><span>Useful when students want more design control for layout and branding.</span></div>
+        </div>
+      </section>
+
+      <section id="word-bank" class="section-panel compact">
+        <p class="eyebrow">Student Support</p>
+        <h2>Useful UI Word Bank</h2>
+        <div class="word-grid">
+          <div><strong>Layout</strong><span>spacing, alignment, grid, sections, hierarchy, balance</span></div>
+          <div><strong>Visual design</strong><span>colour, contrast, typography, imagery, consistency, brand identity</span></div>
+          <div><strong>Usability</strong><span>navigation, readability, accessibility, clarity, feedback, affordance</span></div>
+          <div><strong>Interaction</strong><span>button, form, hover state, tap target, error message, confirmation</span></div>
+          <div><strong>Evidence</strong><span>screenshot, annotation, prompt, iteration, link, client feedback</span></div>
+          <div><strong>Improvement language</strong><span>simplify, highlight, group, reduce, clarify, prioritise</span></div>
+        </div>
+      </section>
+
+      <section id="ai-rules" class="section-panel compact warning-panel">
+        <p class="eyebrow">Academic Integrity</p>
+        <h2>AI Use Rules For This Assessment</h2>
+        <div class="split">
+          <article>
+            <h3>Permitted support</h3>
+            <ul class="check-list">
+              <li>Clarify UI terms such as Golden Ratio, Rule of Thirds, HTML, and layout.</li>
+              <li>Brainstorm layout ideas or improvement directions.</li>
+              <li>Improve grammar, structure, and formatting.</li>
+              <li>Learn basic syntax or tool steps.</li>
+              <li>Generate placeholder content that you adapt and justify.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Not permitted</h3>
+            <ul class="cross-list">
+              <li>Submitting AI-generated final answers without your own understanding.</li>
+              <li>Using AI to replace your app analysis, screenshots, design decisions, or client feedback.</li>
+              <li>Submitting a full AI-generated design as if it was your own design work.</li>
+              <li>Creating fake observations, fake screenshots, or fake feedback.</li>
+            </ul>
+          </article>
+        </div>
+        <div class="callout">Key principle: AI can support your process, but all analysis, design, development, evidence, and explanations must reflect your own work.</div>
+      </section>
+
+      <section id="task-1" class="section-panel task-intro">
+        <div class="section-heading">
+          <p class="eyebrow">Task 1</p>
+          <h2>Applied Knowledge Questions: Interface Design Context</h2>
+          <p>Task 1 checks whether you understand important UI concepts and can explain how they are used in practical interface design work.</p>
+        </div>
+        <div class="assessment-text task-text">
+          <p class="eyebrow">Assessment Text</p>
+          <h3>Task 1 - Applied Knowledge Questions (Interface Design Context)</h3>
+          <p>You are working as a junior UI designer in a small digital product team. Your role is to support the design and development of user interfaces that are visually effective, functional, and aligned with web standards.</p>
+          <p>For each of the following scenarios, provide a clear and practical response based on your understanding of interface design and development concepts.</p>
+          <p>Each answer must:</p>
+          <ul>
+            <li>Be written in your own words</li>
+            <li>Demonstrate applied understanding (not only theory)</li>
+            <li>Include examples where relevant</li>
+          </ul>
+        </div>
+        <div class="guide-section-label"><span>Explanation</span><p>Use simple language. Define the concept, show how it applies to a UI, then give a practical example. Avoid copying generic definitions only.</p></div>
+        <div class="check-panel">
+          <h3>Evidence Checklist - Task 1 Overall</h3>
+          <label><input type="checkbox" data-check /> I answered all four knowledge questions.</label>
+          <label><input type="checkbox" data-check /> Each answer is at least 100 words where required.</label>
+          <label><input type="checkbox" data-check /> I used my own words and practical UI examples.</label>
+          <label><input type="checkbox" data-check /> I included an image or visible grid for Rule of Thirds in Q2.</label>
+        </div>
+      </section>
+
+      <section id="task-1-q1" class="section-panel">
+        <div class="question-header">
+          <span class="question-number">T1 Q1</span>
+          <div>
+            <h2>Layout and Visual Balance: Golden Ratio</h2>
+            <p>Explain what the Golden Ratio is and how it can help a landing page feel balanced.</p>
+          </div>
+        </div>
+        <div class="assessment-text">
+          <p class="eyebrow">Assessment Text</p>
+          <h3>Q1. Layout and Visual Balance (Golden Ratio)</h3>
+          <p>You are designing a landing page for a new digital product. Your team wants the layout to feel visually balanced, professional, and easy to navigate.</p>
+          <p>Explain:</p>
+          <ul>
+            <li>What the Golden Ratio is (in your own words)</li>
+            <li>How it can be applied to structure a user interface layout</li>
+            <li>Provide one practical example of how you would use it in your landing page (e.g. layout sections, spacing, image/text balance)</li>
+          </ul>
+          <p><strong>Answer requirements:</strong> At least 100 words.</p>
+        </div>
+        <div class="guide-section-label"><span>Explanation</span><p>The Golden Ratio is a proportion often described as about 1:1.618. In UI, you can use it as a guide for width, spacing, image/text balance, or section hierarchy. You do not need to do complex maths, but you should show how proportion can make a layout feel balanced.</p></div>
+        <div class="illustration-card">
+          <div class="visual-example journey-visual">
+            <span>Text area 38%</span>
+            <span>Hero image 62%</span>
+            <span>CTA</span>
+            <span>Next section</span>
+          </div>
+          <div>
+            <h3>Safe answer structure</h3>
+            <ol>
+              <li>Define the Golden Ratio in your own words.</li>
+              <li>Explain how designers use proportion to organise visual weight.</li>
+              <li>Give one landing page example such as a 38/62 split, larger hero image, or spacing rhythm.</li>
+              <li>Explain how this helps users scan and navigate the page.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="check-panel">
+          <h3>Evidence Checklist - T1 Q1</h3>
+          <label><input type="checkbox" data-check /> I explained the Golden Ratio in my own words.</label>
+          <label><input type="checkbox" data-check /> I connected it to UI layout, balance, or spacing.</label>
+          <label><input type="checkbox" data-check /> I gave one practical landing page example.</label>
+          <label><input type="checkbox" data-check /> I wrote at least 100 words.</label>
+        </div>
+      </section>
+
+      <section id="task-1-q2" class="section-panel">
+        <div class="question-header">
+          <span class="question-number">T1 Q2</span>
+          <div>
+            <h2>Image Composition in UI: Rule of Thirds</h2>
+            <p>Select or create an image and show how the Rule of Thirds supports image placement and text visibility.</p>
+          </div>
+        </div>
+        <div class="assessment-text">
+          <p class="eyebrow">Assessment Text</p>
+          <h3>Q2. Image Composition in UI (Rule of Thirds)</h3>
+          <p>You are selecting a hero image for the homepage of a website. The goal is to make the image visually engaging while ensuring key content (e.g. text, buttons) is clearly visible.</p>
+          <p>You are required to:</p>
+          <ul>
+            <li>Select or create an image (any image suitable for a UI)</li>
+            <li>Apply the rule of thirds by dividing the image into 9 equal sections</li>
+            <li>Position key elements of the image according to this rule</li>
+          </ul>
+          <p>Then explain:</p>
+          <ul>
+            <li>How you applied the rule of thirds</li>
+            <li>Why this improves the effectiveness of the image in a user interface</li>
+          </ul>
+          <p><strong>Answer requirements:</strong> Image with visible grid or clear explanation. At least 100 words.</p>
+        </div>
+        <div class="guide-section-label"><span>Explanation</span><p>The Rule of Thirds divides an image into three columns and three rows. Important subjects often sit near the lines or intersections. In UI, this helps you place text, buttons, and focal points without making the image feel crowded.</p></div>
+        <div class="illustration-card">
+          <div class="visual-example testing-visual">
+            <span>Left third</span>
+            <span>Centre third</span>
+            <span>Right third</span>
+            <span>CTA safe space</span>
+          </div>
+          <div>
+            <h3>What to submit</h3>
+            <ul>
+              <li>A selected or created image.</li>
+              <li>A visible 3 by 3 grid over the image, or a very clear written explanation.</li>
+              <li>A short explanation of where the main subject and UI text/button are placed.</li>
+              <li>A reason this improves visibility, focus, and visual interest.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="check-panel">
+          <h3>Evidence Checklist - T1 Q2</h3>
+          <label><input type="checkbox" data-check /> I selected or created a suitable UI image.</label>
+          <label><input type="checkbox" data-check /> I showed or clearly explained the 9-section Rule of Thirds grid.</label>
+          <label><input type="checkbox" data-check /> I explained how key elements are positioned.</label>
+          <label><input type="checkbox" data-check /> I explained why this helps the interface.</label>
+          <label><input type="checkbox" data-check /> I wrote at least 100 words.</label>
+        </div>
+      </section>
+
+      <section id="task-1-q3" class="section-panel">
+        <div class="question-header">
+          <span class="question-number">T1 Q3</span>
+          <div>
+            <h2>HTML in User Interface Development</h2>
+            <p>Choose at least three HTML tags and explain how they structure a UI.</p>
+          </div>
+        </div>
+        <div class="assessment-text">
+          <p class="eyebrow">Assessment Text</p>
+          <h3>Q3. HTML in User Interface Development</h3>
+          <p>You are working with a web developer to build a basic interface for a website. You are asked to suggest key HTML elements that will structure the content of the page.</p>
+          <p>Provide:</p>
+          <ul>
+            <li>At least three (3) HTML elements (tags) commonly used in UI development</li>
+            <li>For each:
+              <ul>
+                <li>Write the HTML code</li>
+                <li>Explain what it does</li>
+                <li>Explain how it contributes to the structure or functionality of a user interface</li>
+              </ul>
+            </li>
+          </ul>
+          <p><strong>Answer requirements:</strong> At least 100 words.</p>
+        </div>
+        <div class="guide-section-label"><span>Explanation</span><p>Pick tags you understand. A strong answer does not list tags only. It explains how each tag helps a page become readable, structured, accessible, or interactive.</p></div>
+        <div class="method-table-wrap">
+          <table>
+            <thead><tr><th>HTML tag option</th><th>What it does</th><th>How it helps UI</th></tr></thead>
+            <tbody>
+              <tr><td><code>&lt;header&gt;</code></td><td>Defines the top section of a page or area.</td><td>Helps users find branding, navigation, or the main heading quickly.</td></tr>
+              <tr><td><code>&lt;nav&gt;</code></td><td>Groups navigation links.</td><td>Makes movement between pages or sections clearer.</td></tr>
+              <tr><td><code>&lt;button&gt;</code></td><td>Creates an interactive button.</td><td>Supports actions such as submit, continue, open, or save.</td></tr>
+              <tr><td><code>&lt;form&gt;</code></td><td>Groups input fields for user information.</td><td>Creates the structure for sign-up, contact, or search workflows.</td></tr>
+              <tr><td><code>&lt;section&gt;</code></td><td>Defines a meaningful page section.</td><td>Improves content organisation and scanning.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="check-panel">
+          <h3>Evidence Checklist - T1 Q3</h3>
+          <label><input type="checkbox" data-check /> I included at least three HTML elements.</label>
+          <label><input type="checkbox" data-check /> I wrote the HTML code for each tag.</label>
+          <label><input type="checkbox" data-check /> I explained what each tag does.</label>
+          <label><input type="checkbox" data-check /> I explained how each tag supports UI structure or functionality.</label>
+          <label><input type="checkbox" data-check /> I wrote at least 100 words.</label>
+        </div>
+      </section>
+
+      <section id="task-1-q4" class="section-panel">
+        <div class="question-header">
+          <span class="question-number">T1 Q4</span>
+          <div>
+            <h2>UI Development Tools: Open-Source Tools</h2>
+            <p>Research two open-source tools and explain why they suit UI work.</p>
+          </div>
+        </div>
+        <div class="assessment-text">
+          <p class="eyebrow">Assessment Text</p>
+          <h3>Q4. UI Development Tools (Open-Source Tools)</h3>
+          <p>You are preparing to develop a user interface and need to choose tools that are accessible, flexible, and suitable for UI development.</p>
+          <p>Research and explain:</p>
+          <ul>
+            <li>At least two (2) open-source tools used in UI design or development</li>
+            <li>For each tool:
+              <ul>
+                <li>What it is</li>
+                <li>What it is used for</li>
+                <li>Why it would be suitable for developing a user interface</li>
+              </ul>
+            </li>
+          </ul>
+          <p><strong>Answer requirements:</strong> At least 100 words.</p>
+        </div>
+        <div class="guide-section-label"><span>Explanation</span><p>Open-source tools have source code that can be inspected, used, or modified under a licence. Choose tools that genuinely support UI design or development, then explain their purpose in your own words.</p></div>
+        <div class="method-picker">
+          <h3>Tool ideas to research</h3>
+          <div><strong>Penpot</strong><span>Open-source design and prototyping tool, similar in purpose to Figma.</span></div>
+          <div><strong>Visual Studio Code</strong><span>Code editor commonly used to build HTML, CSS, and JavaScript interfaces.</span></div>
+          <div><strong>Bootstrap</strong><span>Open-source front-end framework for layouts, components, and responsive design.</span></div>
+          <div><strong>GIMP</strong><span>Open-source image editing tool useful for preparing UI images and assets.</span></div>
+        </div>
+        <div class="check-panel">
+          <h3>Evidence Checklist - T1 Q4</h3>
+          <label><input type="checkbox" data-check /> I researched at least two open-source UI design or development tools.</label>
+          <label><input type="checkbox" data-check /> I explained what each tool is.</label>
+          <label><input type="checkbox" data-check /> I explained what each tool is used for.</label>
+          <label><input type="checkbox" data-check /> I explained why each tool is suitable for UI development.</label>
+          <label><input type="checkbox" data-check /> I wrote at least 100 words.</label>
+        </div>
+      </section>
+
+      <section id="task-2" class="section-panel task-intro">
+        <div class="section-heading">
+          <p class="eyebrow">Task 2</p>
+          <h2>Establish Requirements and Build a UI Prototype</h2>
+          <p>Task 2 asks you to analyse a real mobile app, define UI improvements, build an AI-assisted prototype, and refine it after client feedback.</p>
+        </div>
+        <div class="assessment-text task-text">
+          <p class="eyebrow">Assessment Text</p>
+          <h3>Task 2 - Establish Requirements and Build a UI Prototype</h3>
+          <p>You are working as a Junior UI Designer in a digital product team.</p>
+          <p>Your team has been asked to improve an existing mobile application that currently has usability and interface issues.</p>
+          <p>Your trainer will act as your client, providing direction and feedback throughout the project.</p>
+          <p>Your goal is to:</p>
+          <ul>
+            <li>analyse an existing application</li>
+            <li>identify UI issues</li>
+            <li>design an improved interface</li>
+            <li>build a prototype</li>
+            <li>refine it based on client feedback</li>
+          </ul>
+          <p><strong>Project Instructions (Must be followed)</strong></p>
+          <ol>
+            <li>Select a mobile application you have used at least twice</li>
+            <li>The application must have a clear purpose and show obvious UI issues or areas for improvement</li>
+            <li>Present your choice to your trainer (client) and obtain approval</li>
+            <li>Select a prototyping tool (e.g. Figma, Canva, Adobe XD or similar)</li>
+            <li>Confirm your tool choice with your trainer</li>
+          </ol>
+        </div>
+        <div class="guide-section-label"><span>Explanation</span><p>This is a practical project. Keep screenshots, notes, prompt iterations, client feedback, and final prototype evidence as you work. Do not leave evidence collection until the end.</p></div>
+        <div class="process-ladder">
+          <div><span>1. Select app</span><small>Used at least twice and has clear UI issues.</small></div>
+          <div><span>2. Analyse UI</span><small>Screenshots, issues, users, purpose.</small></div>
+          <div><span>3. Prototype</span><small>Prompt, generate, test, iterate.</small></div>
+          <div><span>4. Refine</span><small>Get client feedback and improve.</small></div>
+        </div>
+        <div class="check-panel">
+          <h3>Evidence Checklist - Task 2 Overall</h3>
+          <label><input type="checkbox" data-check /> I selected a mobile app I have used at least twice.</label>
+          <label><input type="checkbox" data-check /> I obtained trainer/client approval for the app and tool.</label>
+          <label><input type="checkbox" data-check /> I collected screenshots before starting improvements.</label>
+          <label><input type="checkbox" data-check /> I saved prompt evidence and prototype versions.</label>
+        </div>
+      </section>
+
+      <section id="task-2-q1" class="section-panel">
+        <div class="question-header">
+          <span class="question-number">T2 Q1</span>
+          <div>
+            <h2>Application Analysis</h2>
+            <p>Show what the current app does, who uses it, and which interface areas need improvement.</p>
+          </div>
+        </div>
+        <div class="assessment-text">
+          <p class="eyebrow">Assessment Text</p>
+          <h3>Q1 - Application Analysis (Understanding the Current UI)</h3>
+          <p>Provide the following information about your selected mobile application:</p>
+          <ul>
+            <li>Application Name</li>
+            <li>What the application does (main function and purpose)</li>
+            <li>Target users (who typically uses this app)</li>
+            <li>Screenshot(s) of the current interface</li>
+            <li>Clearly indicate (highlight or describe) the areas you plan to improve</li>
+          </ul>
+          <p><strong>Important:</strong> Your screenshots must show real UI issues or opportunities for improvement.</p>
+          <p><strong>Answer requirements:</strong> At least 100 words + screenshots at least 2.</p>
+        </div>
+        <div class="guide-section-label"><span>Explanation</span><p>Do not only say "the app is confusing." Be specific. For example: the button is hard to see, the form labels are unclear, there are too many steps, the icons are not obvious, or the layout does not group related content.</p></div>
+        <div class="question-bank">
+          <h3>Questions to help your analysis</h3>
+          <div><strong>Purpose</strong><span>What task does this app help users complete?</span></div>
+          <div><strong>Target users</strong><span>Who uses this app, and what do they need quickly?</span></div>
+          <div><strong>UI issues</strong><span>Where do users need to tap, read, search, or decide?</span></div>
+          <div><strong>Evidence</strong><span>Which two screenshots clearly show the issue?</span></div>
+        </div>
+        <div class="check-panel">
+          <h3>Evidence Checklist - T2 Q1</h3>
+          <label><input type="checkbox" data-check /> I named the selected mobile app.</label>
+          <label><input type="checkbox" data-check /> I explained the app purpose and target users.</label>
+          <label><input type="checkbox" data-check /> I included at least two screenshots.</label>
+          <label><input type="checkbox" data-check /> I highlighted or clearly described the areas to improve.</label>
+          <label><input type="checkbox" data-check /> I wrote at least 100 words.</label>
+        </div>
+      </section>
+
+      <section id="task-2-q2" class="section-panel">
+        <div class="question-header">
+          <span class="question-number">T2 Q2</span>
+          <div>
+            <h2>UI Project Requirements</h2>
+            <p>Define the problem, your improvement plan, expected outcome, and organisational guidelines.</p>
+          </div>
+        </div>
+        <div class="assessment-text">
+          <p class="eyebrow">Assessment Text</p>
+          <h3>Q2 - UI Project Requirements (Defining the Problem and Solution)</h3>
+          <p>You are now required to define your UI improvement project clearly.</p>
+          <p>Explain:</p>
+          <ul>
+            <li>What specific UI issues or problems exist in the current application (e.g. navigation, layout, readability, user flow, interaction issues)</li>
+            <li>How you will improve the interface (be specific - layout, components, interaction, structure)</li>
+            <li>What you expect your improved UI to achieve (e.g. better usability, faster interaction, clearer content)</li>
+            <li>What organisational guidelines you will consider (e.g. branding, colours, consistency, accessibility, user expectations, ratings)</li>
+          </ul>
+          <p><strong>Important:</strong> Your response must show clear reasoning and practical decision-making.</p>
+          <p><strong>Answer requirements:</strong> At least 100 words.</p>
+        </div>
+        <div class="guide-section-label"><span>Explanation</span><p>This question is about design reasoning. Show the connection between issue, change, and expected user benefit. Organisational guidelines can include brand colours, tone, accessibility, privacy, consistency with app patterns, app store expectations, or rating/review concerns.</p></div>
+        <div class="method-table-wrap">
+          <table>
+            <thead><tr><th>Problem</th><th>Improvement</th><th>Expected result</th></tr></thead>
+            <tbody>
+              <tr><td>Navigation is hidden or unclear.</td><td>Use clearer labels, visible tabs, or simplified menu structure.</td><td>Users find key actions faster.</td></tr>
+              <tr><td>Text is hard to read.</td><td>Increase contrast, font size, spacing, and section hierarchy.</td><td>Users understand content with less effort.</td></tr>
+              <tr><td>Forms are long or confusing.</td><td>Group fields, improve labels, add helpful microcopy.</td><td>Users complete tasks with fewer errors.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="check-panel">
+          <h3>Evidence Checklist - T2 Q2</h3>
+          <label><input type="checkbox" data-check /> I described specific current UI issues.</label>
+          <label><input type="checkbox" data-check /> I explained specific interface improvements.</label>
+          <label><input type="checkbox" data-check /> I explained what the improved UI should achieve.</label>
+          <label><input type="checkbox" data-check /> I included organisational guidelines such as branding, consistency, accessibility, or user expectations.</label>
+          <label><input type="checkbox" data-check /> I wrote at least 100 words.</label>
+        </div>
+      </section>
+
+      <section id="task-2-q3" class="section-panel">
+        <div class="question-header">
+          <span class="question-number">T2 Q3</span>
+          <div>
+            <h2>AI-Assisted Prototype Development and Design Refinement</h2>
+            <p>Use Replit, Lovable, or Bolt to generate and refine your improved UI through prompt iterations.</p>
+          </div>
+        </div>
+        <div class="assessment-text">
+          <p class="eyebrow">Assessment Text</p>
+          <h3>Q3 - AI-Assisted Prototype Development and Design Refinement</h3>
+          <p>You are now required to design and build your improved UI using an AI-powered prototype development tool.</p>
+          <p>Instead of manually creating a prototype, you will use AI "vibe coding" tools to generate your interface using prompts.</p>
+          <p><strong>Step 1 - Select an AI Tool</strong></p>
+          <ul>
+            <li>Replit - Builds working apps from prompts, including UI, logic, and hosting</li>
+            <li>Lovable - Generates full web applications from simple descriptions (ideal for beginners)</li>
+            <li>Bolt - Fast browser-based tool for generating front-end and full-stack apps</li>
+          </ul>
+          <p><strong>Step 2 - Develop Your Improved Prototype</strong></p>
+          <ul>
+            <li>use prompt engineering to generate your improved UI</li>
+            <li>ensure your design reflects the improvements identified in Q2</li>
+            <li>includes colour and visual hierarchy</li>
+            <li>shows clear layout and structure</li>
+            <li>improves usability and clarity</li>
+          </ul>
+          <p><strong>Step 3 - Document Your Prompting Process</strong></p>
+          <ul>
+            <li>all prompts used</li>
+            <li>all iterations (changes to prompts)</li>
+            <li>AI-generated outputs at each stage</li>
+            <li>screenshots OR screen recording (video)</li>
+          </ul>
+          <p><strong>Step 4 - Client Review</strong></p>
+          <ul>
+            <li>present your prototype to your trainer (client)</li>
+            <li>receive feedback</li>
+            <li>refine your design based on that feedback</li>
+          </ul>
+          <p><strong>What you must submit:</strong> final prototype, prompt engineering evidence, client feedback and refinement, and a written explanation minimum 100 words.</p>
+        </div>
+        <div class="guide-section-label"><span>Explanation</span><p>Do not only submit the final screen. The assessment wants to see the process: prompt, output, problem noticed, refined prompt, improved output, client feedback, final changes.</p></div>
+        <div class="ai-workflow">
+          <div>Prompt 1</div>
+          <div>Output 1</div>
+          <div>Evaluate</div>
+          <div>Prompt 2</div>
+          <div>Output 2</div>
+          <div>Client feedback</div>
+          <div>Refine</div>
+          <div>Final UI</div>
+        </div>
+        <div class="language-box">
+          <h3>Prompt starter you can adapt</h3>
+          <pre><code>Create a mobile app screen redesign for [app type]. The current problem is [specific UI issue]. The target users are [users]. Improve the layout by [specific change], improve readability by [specific change], and include [key components]. Use a clean visual hierarchy, accessible contrast, and clear call-to-action buttons.</code></pre>
+        </div>
+        <div class="check-panel">
+          <h3>Evidence Checklist - T2 Q3</h3>
+          <label><input type="checkbox" data-check /> I selected Replit, Lovable, or Bolt.</label>
+          <label><input type="checkbox" data-check /> I used prompts connected to the Q2 UI improvements.</label>
+          <label><input type="checkbox" data-check /> I documented prompts, iterations, and AI outputs.</label>
+          <label><input type="checkbox" data-check /> I included screenshots or video evidence of the process.</label>
+          <label><input type="checkbox" data-check /> I presented the prototype to the trainer/client and recorded feedback.</label>
+          <label><input type="checkbox" data-check /> I explained the process in at least 100 words.</label>
+        </div>
+      </section>
+
+      <section id="task-2-q4" class="section-panel">
+        <div class="question-header">
+          <span class="question-number">T2 Q4</span>
+          <div>
+            <h2>Final Prototype Evidence</h2>
+            <p>Show the before and after, tool evidence, improvements, and feedback-based changes.</p>
+          </div>
+        </div>
+        <div class="assessment-text">
+          <p class="eyebrow">Assessment Text</p>
+          <h3>Q4 - Final Prototype Evidence (Before and After + Tool Evidence)</h3>
+          <p>After receiving feedback and refining your design, provide:</p>
+          <p><strong>Required screenshots (minimum 5):</strong></p>
+          <ol>
+            <li>Your prototyping tool interface showing your design (must clearly show the tool used)</li>
+            <li>Your initial prototype version</li>
+            <li>Your final improved prototype</li>
+            <li>Additional screenshot focusing on specific UI improvements, key screens or components, annotations</li>
+            <li>Additional screenshot focusing on specific UI improvements, key screens or components, annotations</li>
+          </ol>
+          <p><strong>Explanation required:</strong> Briefly explain what changes you made after client feedback and how those changes improved the interface.</p>
+          <p><strong>Answer requirements:</strong> At least 100 words + screenshots.</p>
+        </div>
+        <div class="guide-section-label"><span>Explanation</span><p>Your screenshots should tell a story: current problem, first generated solution, feedback, final improved design. Use arrows, labels, or short captions so the assessor can immediately see what changed.</p></div>
+        <div class="evidence-strip">
+          <div><span>1</span><small>Tool interface visible</small></div>
+          <div><span>2</span><small>Initial version</small></div>
+          <div><span>3</span><small>Final version</small></div>
+          <div><span>4-5</span><small>Annotated improvements</small></div>
+        </div>
+        <div class="check-panel">
+          <h3>Evidence Checklist - T2 Q4</h3>
+          <label><input type="checkbox" data-check /> I included at least five screenshots.</label>
+          <label><input type="checkbox" data-check /> One screenshot clearly shows the prototyping tool used.</label>
+          <label><input type="checkbox" data-check /> I included an initial prototype and final improved prototype.</label>
+          <label><input type="checkbox" data-check /> I annotated or explained specific improvements.</label>
+          <label><input type="checkbox" data-check /> I explained what changed after client feedback.</label>
+          <label><input type="checkbox" data-check /> I wrote at least 100 words.</label>
+        </div>
+      </section>
+
+      <section id="task-3" class="section-panel task-intro">
+        <div class="section-heading">
+          <p class="eyebrow">Task 3</p>
+          <h2>Design and Build User Interface</h2>
+          <p>Task 3 asks you to create a two-page website for a digital product or service, then explain the content flow and submit a published link with screenshots.</p>
+        </div>
+        <div class="assessment-text task-text">
+          <p class="eyebrow">Assessment Text</p>
+          <h3>Task 3 - Design and Build User Interface</h3>
+          <p>You are working as a UI Designer responsible for creating a website for a digital product or service.</p>
+          <p>This may be a project you have developed, an idea you are exploring, or a concept you want to bring to life.</p>
+          <p>Your goal is to design and build a clear, visually engaging, and functional user interface that:</p>
+          <ul>
+            <li>communicates your idea effectively</li>
+            <li>uses relevant media (images, visuals, or video where appropriate)</li>
+            <li>reflects a consistent brand identity (colours, typography, tone)</li>
+            <li>guides users toward taking action</li>
+          </ul>
+          <p><strong>Project Requirements</strong></p>
+          <ul>
+            <li>Two pages only: Landing Page and Sign-up Page</li>
+            <li>A clear purpose and target user</li>
+            <li>A consistent visual style (brand identity)</li>
+            <li>Relevant media used appropriately</li>
+            <li>A clear call to action leading users to sign up</li>
+          </ul>
+        </div>
+        <div class="guide-section-label"><span>Explanation</span><p>The website should be simple and complete. Two pages is enough: a persuasive landing page and a sign-up page with the required form fields.</p></div>
+        <div class="visual-strip">
+          <article class="product-card"><span class="product-icon">LP</span><strong>Landing Page</strong><small>Explain product, benefits, how it works, CTA.</small></article>
+          <article class="product-card"><span class="product-icon">CTA</span><strong>Call To Action</strong><small>Button or link that leads users to sign up.</small></article>
+          <article class="product-card"><span class="product-icon">SU</span><strong>Sign-up Page</strong><small>Form with all required fields.</small></article>
+        </div>
+        <div class="check-panel">
+          <h3>Evidence Checklist - Task 3 Overall</h3>
+          <label><input type="checkbox" data-check /> I created exactly two pages: landing page and sign-up page.</label>
+          <label><input type="checkbox" data-check /> I used consistent branding across both pages.</label>
+          <label><input type="checkbox" data-check /> I included relevant media.</label>
+          <label><input type="checkbox" data-check /> I included a clear CTA leading to sign-up.</label>
+        </div>
+      </section>
+
+      <section id="task-3-q1" class="section-panel">
+        <div class="question-header">
+          <span class="question-number">T3 Q1</span>
+          <div>
+            <h2>Content Flow: User Journey and Interaction</h2>
+            <p>Describe how a user moves from the landing page to completing the sign-up.</p>
+          </div>
+        </div>
+        <div class="assessment-text">
+          <p class="eyebrow">Assessment Text</p>
+          <h3>Q1 - Content Flow (User Journey and Interaction)</h3>
+          <p>Describe the content flow of your website from when a user first lands on the page to when they complete the sign-up.</p>
+          <p>Your response must:</p>
+          <ul>
+            <li>Be written in dot points</li>
+            <li>Include at least 5 steps</li>
+            <li>Clearly describe:
+              <ul>
+                <li>what the user sees</li>
+                <li>what the user does</li>
+                <li>how the interface guides them</li>
+              </ul>
+            </li>
+            <li>Demonstrate a logical and clear user journey</li>
+          </ul>
+          <p><strong>Answer requirements:</strong> At least 100 words.</p>
+        </div>
+        <div class="guide-section-label"><span>Explanation</span><p>Write this as a journey. Each dot point should include a screen/section, user action, and interface guidance. For example: "The user sees the hero section, reads the value proposition, and clicks the sign-up button."</p></div>
+        <div class="process-ladder">
+          <div><span>1. Arrive</span><small>User sees product name and value proposition.</small></div>
+          <div><span>2. Understand</span><small>User reads benefits and how it works.</small></div>
+          <div><span>3. Decide</span><small>User sees CTA and trust/contact details.</small></div>
+          <div><span>4. Sign up</span><small>User completes form and submits.</small></div>
+        </div>
+        <div class="check-panel">
+          <h3>Evidence Checklist - T3 Q1</h3>
+          <label><input type="checkbox" data-check /> I used dot points.</label>
+          <label><input type="checkbox" data-check /> I included at least five steps.</label>
+          <label><input type="checkbox" data-check /> Each step explains what the user sees, does, and how the UI guides them.</label>
+          <label><input type="checkbox" data-check /> The journey goes from landing page to completed sign-up.</label>
+          <label><input type="checkbox" data-check /> I wrote at least 100 words.</label>
+        </div>
+      </section>
+
+      <section id="task-3-q2" class="section-panel">
+        <div class="question-header">
+          <span class="question-number">T3 Q2</span>
+          <div>
+            <h2>Build Your User Interface</h2>
+            <p>Build a two-page website in Google Sites, Wix, Webflow, or a similar tool.</p>
+          </div>
+        </div>
+        <div class="assessment-text">
+          <p class="eyebrow">Assessment Text</p>
+          <h3>Q2 - Build Your User Interface (Website Development)</h3>
+          <p>Design and build your website using Google Sites, Wix, Webflow, or a similar tool.</p>
+          <p>Your interface must:</p>
+          <ul>
+            <li>clearly guide users from landing page to sign-up page</li>
+            <li>use consistent branding across both pages</li>
+            <li>include clear UI elements (buttons, sections, forms)</li>
+            <li>demonstrate usability and readability</li>
+            <li>use media appropriately to support communication and engagement</li>
+          </ul>
+          <p><strong>A. Landing Page Requirements</strong></p>
+          <ul>
+            <li>Name and slogan/value proposition</li>
+            <li>A strong visual section (image or video)</li>
+            <li>Description of your product/service</li>
+            <li>Explanation of how it works (minimum 3 steps)</li>
+            <li>A clear Call to Action (CTA)</li>
+            <li>Contact details</li>
+            <li>Consistent brand identity and effective use of media</li>
+          </ul>
+          <p><strong>B. Sign-up Page Requirements</strong></p>
+          <ul>
+            <li>Full name</li>
+            <li>Email</li>
+            <li>Phone</li>
+            <li>Address</li>
+            <li>City</li>
+            <li>State</li>
+            <li>Additional comments</li>
+          </ul>
+          <p><strong>Submission Requirements:</strong> Link to your published website and screenshots showing landing page, sign-up page, navigation between pages, and examples of branding and media use.</p>
+        </div>
+        <div class="guide-section-label"><span>Explanation</span><p>Build the actual website, not only a written plan. The assessor needs to see a working published link and screenshots. Check that the CTA on the landing page really takes users to the sign-up page.</p></div>
+        <div class="method-table-wrap">
+          <table>
+            <thead><tr><th>Website part</th><th>Must include</th><th>Student check</th></tr></thead>
+            <tbody>
+              <tr><td>Landing page</td><td>Name, value proposition, media, description, how it works, CTA, contact details.</td><td>Can a new visitor understand the product in 30 seconds?</td></tr>
+              <tr><td>Sign-up page</td><td>Form with all required fields.</td><td>Are labels clear and fields easy to complete?</td></tr>
+              <tr><td>Branding</td><td>Colours, typography, layout, tone, media style.</td><td>Do both pages feel like the same brand?</td></tr>
+              <tr><td>Submission</td><td>Published link and screenshots.</td><td>Does the link open for someone else?</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="check-panel">
+          <h3>Evidence Checklist - T3 Q2</h3>
+          <label><input type="checkbox" data-check /> I built the website using Google Sites, Wix, Webflow, or a similar tool.</label>
+          <label><input type="checkbox" data-check /> I submitted a working published website link.</label>
+          <label><input type="checkbox" data-check /> The landing page includes all required content.</label>
+          <label><input type="checkbox" data-check /> The sign-up page includes all required form fields.</label>
+          <label><input type="checkbox" data-check /> I included screenshots of the landing page and sign-up page.</label>
+          <label><input type="checkbox" data-check /> I included screenshots showing navigation, branding, and media use.</label>
+        </div>
+      </section>
+
+      <section id="submission" class="section-panel compact">
+        <p class="eyebrow">Final Check</p>
+        <h2>Submission Checklist</h2>
+        <div class="submission-grid">
+          <article>
+            <h3>Task 1</h3>
+            <label><input type="checkbox" data-check /> Q1 Golden Ratio answer, at least 100 words.</label>
+            <label><input type="checkbox" data-check /> Q2 Rule of Thirds answer, image/grid evidence, at least 100 words.</label>
+            <label><input type="checkbox" data-check /> Q3 HTML elements, code and explanations, at least 100 words.</label>
+            <label><input type="checkbox" data-check /> Q4 two open-source tools, at least 100 words.</label>
+          </article>
+          <article>
+            <h3>Task 2</h3>
+            <label><input type="checkbox" data-check /> App selection approved by trainer/client.</label>
+            <label><input type="checkbox" data-check /> Current app analysis with at least two screenshots.</label>
+            <label><input type="checkbox" data-check /> UI project requirements and organisational guidelines.</label>
+            <label><input type="checkbox" data-check /> AI prototype prompts, iterations, outputs, and client feedback.</label>
+            <label><input type="checkbox" data-check /> Final prototype evidence with at least five screenshots.</label>
+          </article>
+          <article>
+            <h3>Task 3</h3>
+            <label><input type="checkbox" data-check /> Content flow in dot points, at least five steps and 100 words.</label>
+            <label><input type="checkbox" data-check /> Published two-page website link.</label>
+            <label><input type="checkbox" data-check /> Landing page and sign-up page screenshots.</label>
+            <label><input type="checkbox" data-check /> Branding, media, navigation, CTA, and form evidence.</label>
+          </article>
+        </div>
+        <div class="ownership-footer">
+          <strong>Prepared by Nelson David Moncayo</strong>
+          <span>Trainer | nmoncayo@apc.edu.au | WhatsApp 041639788</span>
+          <p>This guide is Nelson David Moncayo's trainer-created support material for his students and should not be copied, reused, or redistributed by another trainer or person without permission.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
