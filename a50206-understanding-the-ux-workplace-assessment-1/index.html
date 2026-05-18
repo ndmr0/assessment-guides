@@ -1,0 +1,561 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A50206 Understanding the UX Workplace - Assessment 1</title>
+    <link rel="stylesheet" href="../a50200-user-experience-solutions-assessment-1/styles.css" />
+    <style>
+      .method-table {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+        margin-top: 18px;
+      }
+
+      .method-table div {
+        display: grid;
+        gap: 5px;
+        padding: 14px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: #fbfcfe;
+      }
+
+      .method-table strong {
+        color: var(--ink);
+      }
+
+      @media (max-width: 860px) {
+        .topbar {
+          gap: 12px;
+        }
+
+        .topbar h1 {
+          font-size: 1.1rem;
+        }
+
+        .sidebar nav {
+          max-height: 320px;
+          overflow-y: auto;
+          padding-right: 4px;
+        }
+
+        .method-table {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 540px) {
+        .topbar-actions {
+          position: absolute;
+          right: 16px;
+          top: 16px;
+        }
+
+        .topbar > div:first-of-type {
+          padding-right: 104px;
+        }
+
+        .sidebar {
+          padding: 12px;
+        }
+
+        .sidebar nav {
+          max-height: 260px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to guide</a>
+
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Diploma of User Experience Design</p>
+        <h1>A50206 Understanding the UX Workplace - Assessment 1</h1>
+        <p class="trainer-mini">Prepared by Nelson David Moncayo, Trainer</p>
+      </div>
+      <div class="trainer-contact-top">
+        <a href="mailto:nmoncayo@apc.edu.au">nmoncayo@apc.edu.au</a>
+        <a href="https://wa.me/6141639788">WhatsApp 041639788</a>
+      </div>
+      <div class="topbar-actions">
+        <button class="icon-button" type="button" data-print title="Print guide" aria-label="Print guide">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M7 8V4h10v4" />
+            <path d="M7 17H5a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+            <path d="M7 14h10v6H7z" />
+          </svg>
+        </button>
+        <button class="icon-button" type="button" data-reset title="Reset checked items" aria-label="Reset checked items">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M3 12a9 9 0 1 0 3-6.7" />
+            <path d="M3 4v6h6" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <aside class="sidebar" aria-label="Guide navigation">
+      <div class="progress-card">
+        <span class="progress-label">Guide progress</span>
+        <div class="progress-track" aria-hidden="true"><span data-progress-bar></span></div>
+        <span class="progress-count" data-progress-count>0 of 0 checked</span>
+      </div>
+      <div class="trainer-card">
+        <span class="trainer-role">Trainer</span>
+        <strong>Nelson David Moncayo</strong>
+        <a href="mailto:nmoncayo@apc.edu.au">nmoncayo@apc.edu.au</a>
+        <a href="https://wa.me/6141639788">WhatsApp 041639788</a>
+      </div>
+      <nav>
+        <a class="nav-main" href="#overview">Overview</a>
+        <a class="nav-main" href="#quick-start">How to use</a>
+        <a class="nav-main" href="#assessment-template">Download template</a>
+        <span class="nav-section">Student support</span>
+        <a class="nav-sub" href="#project-map">Project map</a>
+        <a class="nav-sub" href="#partner-bank">Partner ideas</a>
+        <a class="nav-sub" href="#word-bank">Word bank</a>
+        <a class="nav-sub" href="#ai-rules">AI rules</a>
+        <span class="nav-section">Task 1</span>
+        <a class="nav-task" href="#task-1">Task 1 overview</a>
+        <a class="nav-sub" href="#task-1-q1">Q1 Driver problem</a>
+        <a class="nav-sub" href="#task-1-q2">Q2 UX solution</a>
+        <a class="nav-sub" href="#task-1-q3">Q3 Partner selection</a>
+        <a class="nav-sub" href="#task-1-q4">Q4 SMART objectives</a>
+        <span class="nav-section">Task 2</span>
+        <a class="nav-task" href="#task-2">Task 2 overview</a>
+        <a class="nav-sub" href="#task-2-q1">Q1 Presentation</a>
+        <a class="nav-main" href="#submission">Submission check</a>
+      </nav>
+    </aside>
+
+    <main id="main">
+      <section id="overview" class="hero section-panel">
+        <div class="hero-copy">
+          <p class="eyebrow">50% Project | BSBTWK401</p>
+          <h2>Assessment 1: Build and maintain a business relationship through a UX partnership strategy.</h2>
+          <p>
+            This guide helps you complete A50206 Understanding the UX Workplace. You are working as a UX Designer at Uber, identifying a real driver experience problem and developing a UX solution supported by a strategic business partner.
+          </p>
+          <p>
+            Read the assessment text first, then use the explanation and evidence checklist to make sure each response is specific, researched, and connected to the same project idea.
+          </p>
+          <div class="trainer-intro">
+            <strong>Trainer: Nelson David Moncayo</strong>
+            <span>Email: <a href="mailto:nmoncayo@apc.edu.au">nmoncayo@apc.edu.au</a></span>
+            <span>WhatsApp: <a href="https://wa.me/6141639788">041639788</a></span>
+          </div>
+          <div id="assessment-template" class="template-callout">
+            <p class="eyebrow">Start Here</p>
+            <h3>Download the official assessment template</h3>
+            <p>Click the Google Doc below, download or make a copy, and complete your assessment in that template before submitting.</p>
+            <a class="button primary" href="https://docs.google.com/document/d/1bVmPdccSefc2UfjgfwPWoqU9At_G7lk4MGcGTJfSDL4/edit?usp=drive_link">Open Google Doc template</a>
+          </div>
+          <p class="ownership-note">
+            This student guide was prepared by Nelson David Moncayo for his students. It is trainer-created support material and must not be copied, reused, or redistributed by another trainer or person without permission.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#assessment-template">Download template</a>
+            <a class="button secondary" href="#task-1">Start Task 1</a>
+            <a class="button secondary" href="#submission">View checklist</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Assessment workflow diagram">
+          <div class="flow-node">
+            <span>1</span>
+            <strong>Find the driver problem</strong>
+            <small>Use real Uber research and evidence</small>
+          </div>
+          <div class="flow-line"></div>
+          <div class="flow-node">
+            <span>2</span>
+            <strong>Design the partnership</strong>
+            <small>Connect problem, solution, partner, outcome</small>
+          </div>
+          <div class="flow-line"></div>
+          <div class="flow-node">
+            <span>3</span>
+            <strong>Present the strategy</strong>
+            <small>Use slides, video, questions, and discussion</small>
+          </div>
+        </div>
+      </section>
+
+      <section id="quick-start" class="section-panel compact">
+        <h2>How To Use This Guide</h2>
+        <div class="three-col">
+          <article class="mini-card">
+            <span class="badge">1</span>
+            <h3>Read the task</h3>
+            <p>Start with the assessment wording. Notice whether the question asks you to identify, propose, justify, compare, define, present, or submit evidence.</p>
+          </article>
+          <article class="mini-card">
+            <span class="badge">2</span>
+            <h3>Follow the tips</h3>
+            <p>Use the guide to plan your own answer. Keep the same driver problem, UX solution, partner, and objectives connected across every question.</p>
+          </article>
+          <article class="mini-card">
+            <span class="badge">3</span>
+            <h3>Check the evidence</h3>
+            <p>Before submitting, confirm you have real sources, clear reasoning, SMART measures, slides, and a recorded presentation where required.</p>
+          </article>
+        </div>
+        <div class="plain-steps">
+          <h3>Simple Way To Work Through Each Question</h3>
+          <div><span>Choose</span><p>Choose one real Uber driver problem that you can research and explain clearly.</p></div>
+          <div><span>Connect</span><p>Connect every later answer back to that same problem so the project feels like one strategy.</p></div>
+          <div><span>Research</span><p>Use Uber pages, reports, recent articles, industry data, or partner websites as evidence.</p></div>
+          <div><span>Explain</span><p>Write in your own words and explain why the solution helps drivers and Uber as a business.</p></div>
+          <div><span>Present</span><p>Turn the written strategy into a clear slide presentation with a confident recorded delivery.</p></div>
+        </div>
+      </section>
+
+      <section id="project-map" class="section-panel compact">
+        <p class="eyebrow">Student Support</p>
+        <h2>Keep One Clear Project Line</h2>
+        <p>Students often get lost when each answer feels separate. Use this sequence as your project spine from Task 1 to Task 2.</p>
+        <div class="method-table">
+          <div><strong>Problem</strong><span>What is difficult, unclear, unsafe, slow, expensive, or stressful for Uber drivers?</span></div>
+          <div><strong>Solution</strong><span>What UX feature, service flow, dashboard, support tool, or process would improve the driver experience?</span></div>
+          <div><strong>Partner</strong><span>Which external organisation can help Uber deliver the solution with real capability?</span></div>
+          <div><strong>Objectives</strong><span>How will Uber, the partner, and you measure success?</span></div>
+          <div><strong>Presentation</strong><span>How will you explain the strategy professionally to Uber stakeholders?</span></div>
+        </div>
+      </section>
+
+      <section id="partner-bank" class="section-panel compact">
+        <p class="eyebrow">Student Support</p>
+        <h2>Partner Ideas You Could Research</h2>
+        <p>These examples are only starting points. You must research real organisations and choose partners that match your own problem and solution.</p>
+        <div class="option-grid">
+          <article><h3>Earnings Transparency</h3><p>Fintech, payroll analytics, tax support, accounting, or banking partners that help drivers track income, costs, and earnings patterns.</p></article>
+          <article><h3>Driver Safety</h3><p>Safety technology, insurance, emergency response, dashcam, location-sharing, or risk analytics organisations.</p></article>
+          <article><h3>Support Systems</h3><p>Customer support platforms, AI triage tools, call centre providers, mediation services, or driver advocacy organisations.</p></article>
+          <article><h3>Fuel And Costs</h3><p>Fuel cards, EV charging networks, vehicle maintenance providers, leasing partners, or discount programs.</p></article>
+          <article><h3>Onboarding</h3><p>Training providers, identity verification services, compliance systems, or learning platforms.</p></article>
+          <article><h3>Navigation</h3><p>Mapping, traffic data, parking information, road safety, or accessibility data providers.</p></article>
+        </div>
+      </section>
+
+      <section id="word-bank" class="section-panel compact">
+        <p class="eyebrow">Student Support</p>
+        <h2>Plain-English Word Bank</h2>
+        <div class="word-grid">
+          <div><strong>Strategic partner</strong><span>An external organisation Uber works with because it brings useful services, technology, data, or expertise.</span></div>
+          <div><strong>Driver experience</strong><span>What it feels like for drivers to use Uber's systems, earn money, stay safe, get support, and work with the platform.</span></div>
+          <div><strong>Business objective</strong><span>A measurable goal that helps Uber improve performance, satisfaction, efficiency, retention, or trust.</span></div>
+          <div><strong>Networking objective</strong><span>A measurable goal for building and maintaining the relationship between Uber and the partner.</span></div>
+          <div><strong>SMART goal</strong><span>A goal that is Specific, Measurable, Achievable, Relevant, and Time-bound.</span></div>
+          <div><strong>Stakeholders</strong><span>The people or groups affected by the proposal, such as drivers, Uber teams, partners, riders, and regulators.</span></div>
+        </div>
+      </section>
+
+      <section id="ai-rules" class="section-panel compact">
+        <p class="eyebrow">Academic Integrity</p>
+        <h2>AI Rules For This Assessment</h2>
+        <div class="assessment-text">
+          <div class="guide-section-label"><span>Assessment Text</span></div>
+          <blockquote>
+            AI tools may be used to support your thinking and structuring. However, you must demonstrate your own research, problem identification, UX decisions, and business reasoning. AI must not generate your final responses, solution, or strategy.
+          </blockquote>
+        </div>
+        <div class="explanation-block">
+          <div class="guide-section-label"><span>Explanation</span></div>
+          <p>You can use AI to clarify concepts, organise notes, or improve grammar. You cannot use AI to invent the final Uber problem, final UX solution, final partner justification, SMART goals, or presentation content for you. Your evidence and reasoning must be real and explainable.</p>
+        </div>
+        <div class="evidence-card">
+          <h3>Evidence Checklist</h3>
+          <label><input type="checkbox" data-check /> I can explain every claim in my own words.</label>
+          <label><input type="checkbox" data-check /> My research comes from real sources, not only AI output.</label>
+          <label><input type="checkbox" data-check /> My solution, partner, objectives, and presentation are specific to my own project.</label>
+        </div>
+      </section>
+
+      <section id="task-1" class="section-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Task 1</p>
+          <h2>Establish Business Relationships</h2>
+        </div>
+        <div class="assessment-text">
+          <div class="guide-section-label"><span>Assessment Text</span></div>
+          <blockquote>
+            Your task is to identify a real driver experience problem and develop a UX + business partnership strategy to solve it. You will: identify a real UX issue affecting drivers; propose a UX solution; identify and justify a strategic partner; define clear business and networking objectives; present your strategy professionally.
+          </blockquote>
+        </div>
+        <div class="explanation-block">
+          <div class="guide-section-label"><span>Explanation</span></div>
+          <p>Task 1 is one connected project. Do not choose a different idea for every answer. Pick one Uber driver issue, then build a solution, partner decision, and SMART objectives around that same issue.</p>
+        </div>
+        <div class="evidence-card">
+          <h3>Evidence Checklist</h3>
+          <label><input type="checkbox" data-check /> I have one clear driver problem that can carry through Q1 to Q4.</label>
+          <label><input type="checkbox" data-check /> My idea is realistic for Uber's platform and business context.</label>
+          <label><input type="checkbox" data-check /> I know which sources I will use to support the project.</label>
+        </div>
+      </section>
+
+      <section id="task-1-q1" class="section-panel">
+        <p class="eyebrow">Task 1 | Q1</p>
+        <h2>Identify a Driver Experience Problem</h2>
+        <div class="assessment-text">
+          <div class="guide-section-label"><span>Assessment Text</span></div>
+          <blockquote>
+            Research Uber using: official website; reports, articles, or recent industry insights. Identify one (1) clear problem affecting driver experience. Examples include earnings transparency, safety features, support systems, onboarding or usability issues, and communication between drivers and platform. Explain: What is the problem? Why is it important? How does it impact drivers? How does this issue relate to Uber's focus on safety, reliability, and user experience? Minimum 120 words. Must include at least 1 referenced source.
+          </blockquote>
+        </div>
+        <div class="explanation-block">
+          <div class="guide-section-label"><span>Explanation</span></div>
+          <p>Start with research, not opinion. Choose one driver problem and explain it clearly. A strong answer names the issue, shows why it matters, describes the impact on drivers, and connects the issue to Uber's goals of safety, reliability, and user experience.</p>
+          <div class="example-box">
+            <strong>Useful structure:</strong>
+            <p>Uber drivers may experience [problem]. This matters because [driver impact]. Evidence from [source] shows [specific detail]. This connects to Uber's focus on [safety/reliability/user experience] because [reason].</p>
+          </div>
+        </div>
+        <div class="evidence-card">
+          <h3>Evidence Checklist</h3>
+          <label><input type="checkbox" data-check /> I identified one clear Uber driver experience problem.</label>
+          <label><input type="checkbox" data-check /> I explained why the problem is important and how it affects drivers.</label>
+          <label><input type="checkbox" data-check /> I connected the problem to safety, reliability, and user experience.</label>
+          <label><input type="checkbox" data-check /> I wrote at least 120 words and included at least one real referenced source.</label>
+        </div>
+      </section>
+
+      <section id="task-1-q2" class="section-panel">
+        <p class="eyebrow">Task 1 | Q2</p>
+        <h2>Propose a UX Solution and Partnership Strategy</h2>
+        <div class="assessment-text">
+          <div class="guide-section-label"><span>Assessment Text</span></div>
+          <blockquote>
+            You must design a practical UX solution that addresses the problem you identified in Q1, and explain how this solution would be implemented through a partnership with another organisation. Explain your UX solution, the role of the strategic partner, and the impact on driver experience. Minimum 120 words. Must clearly connect: problem -> solution -> partner -> outcome. Your solution must be realistic and implementable within Uber's platform.
+          </blockquote>
+        </div>
+        <div class="explanation-block">
+          <div class="guide-section-label"><span>Explanation</span></div>
+          <p>This answer is where your idea becomes practical. Name your UX solution, describe how it works, then explain why Uber would need a partner. The partner must contribute something specific, such as data, technology, safety expertise, training, payments support, or service delivery.</p>
+          <div class="method-table">
+            <div><strong>Problem</strong><span>What driver issue did Q1 identify?</span></div>
+            <div><strong>Solution</strong><span>What feature, process, tool, or service would reduce the problem?</span></div>
+            <div><strong>Partner</strong><span>Who helps Uber implement it?</span></div>
+            <div><strong>Outcome</strong><span>What changes for drivers and for Uber?</span></div>
+          </div>
+        </div>
+        <div class="evidence-card">
+          <h3>Evidence Checklist</h3>
+          <label><input type="checkbox" data-check /> I explained what my UX solution is and how it works.</label>
+          <label><input type="checkbox" data-check /> I connected the solution directly to the Q1 problem.</label>
+          <label><input type="checkbox" data-check /> I named the type of external partner and what they contribute.</label>
+          <label><input type="checkbox" data-check /> I explained benefits for drivers and for Uber as a business.</label>
+          <label><input type="checkbox" data-check /> I wrote at least 120 words.</label>
+        </div>
+      </section>
+
+      <section id="task-1-q3" class="section-panel">
+        <p class="eyebrow">Task 1 | Q3</p>
+        <h2>Select and Justify a Strategic Partner</h2>
+        <div class="assessment-text">
+          <div class="guide-section-label"><span>Assessment Text</span></div>
+          <blockquote>
+            Identify at least two (2) organisations that could support your solution. For each organisation, explain what the organisation does, why they are relevant to your solution, and what they could contribute. From your two options, select one (1) organisation as your final strategic partner. You must compare both options before selecting the best partner. Explain why this partner is the best fit, what specific value they bring to Uber, how they improve the driver experience, and evidence to support your decision. Minimum 150 words.
+          </blockquote>
+        </div>
+        <div class="explanation-block">
+          <div class="guide-section-label"><span>Explanation</span></div>
+          <p>Do not jump straight to one partner. Compare two real organisations first. Then choose the strongest option and justify why it fits your solution better. Your comparison should be specific: capability, relevance, cost, trust, data, technology, driver benefit, and business value.</p>
+          <div class="example-box">
+            <strong>Comparison sentence starter:</strong>
+            <p>Partner A is useful because [capability], while Partner B is useful because [capability]. However, Partner [A/B] is the better choice for this project because [reason linked to the driver problem and UX solution].</p>
+          </div>
+        </div>
+        <div class="evidence-card">
+          <h3>Evidence Checklist</h3>
+          <label><input type="checkbox" data-check /> I identified two real potential partner organisations.</label>
+          <label><input type="checkbox" data-check /> I explained what each partner does and what they could contribute.</label>
+          <label><input type="checkbox" data-check /> I compared both options before choosing one final partner.</label>
+          <label><input type="checkbox" data-check /> I justified the final partner using evidence or company capability.</label>
+          <label><input type="checkbox" data-check /> I linked the partner to my problem, solution, and driver outcome.</label>
+          <label><input type="checkbox" data-check /> I wrote at least 150 words.</label>
+        </div>
+      </section>
+
+      <section id="task-1-q4" class="section-panel">
+        <p class="eyebrow">Task 1 | Q4</p>
+        <h2>Define Business and Networking Objectives</h2>
+        <div class="assessment-text">
+          <div class="guide-section-label"><span>Assessment Text</span></div>
+          <blockquote>
+            You must create three (3) SMART objectives for your project: 1. Business Development Objective (For Uber), 2. Networking Objective (Uber + Partner), and 3. Professional Development Objective (You as UX Designer). Each objective must clearly include what will be achieved, how it will be measured, and when it will be achieved.
+          </blockquote>
+        </div>
+        <div class="explanation-block">
+          <div class="guide-section-label"><span>Explanation</span></div>
+          <p>A SMART objective is not a vague wish. It needs a clear action, a measurable result, and a deadline. Write one objective for Uber's business result, one for the partnership relationship, and one for your own development as the UX designer.</p>
+          <div class="method-table">
+            <div><strong>Business</strong><span>What should improve for Uber, such as satisfaction, retention, efficiency, or trust?</span></div>
+            <div><strong>Networking</strong><span>How will Uber and the partner build, maintain, and evaluate the relationship?</span></div>
+            <div><strong>Professional</strong><span>What UX skill will you improve during the project?</span></div>
+          </div>
+        </div>
+        <div class="evidence-card">
+          <h3>Evidence Checklist</h3>
+          <label><input type="checkbox" data-check /> I wrote three SMART objectives, not one general paragraph.</label>
+          <label><input type="checkbox" data-check /> Each objective includes what will be achieved.</label>
+          <label><input type="checkbox" data-check /> Each objective includes a measurable outcome.</label>
+          <label><input type="checkbox" data-check /> Each objective includes a timeframe or deadline.</label>
+          <label><input type="checkbox" data-check /> The objectives connect to my Uber problem, solution, and partner.</label>
+        </div>
+      </section>
+
+      <section id="task-2" class="section-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Task 2</p>
+          <h2>Maintain Business Relationships</h2>
+        </div>
+        <div class="assessment-text">
+          <div class="guide-section-label"><span>Assessment Text</span></div>
+          <blockquote>
+            Your proposal has been reviewed internally, and you have now been invited to present your idea to Uber stakeholders. This is your opportunity to clearly communicate your UX solution, demonstrate the value of your strategic partnership, and convince decision-makers that your idea is worth implementing.
+          </blockquote>
+        </div>
+        <div class="explanation-block">
+          <div class="guide-section-label"><span>Explanation</span></div>
+          <p>Task 2 converts your written strategy into a professional presentation. Your slides and video should tell the same story as Task 1: the driver problem, your solution, the partner, the objectives, the value, the risks, and how the relationship will continue.</p>
+        </div>
+        <div class="evidence-card">
+          <h3>Evidence Checklist</h3>
+          <label><input type="checkbox" data-check /> My presentation uses the same problem, solution, partner, and objectives from Task 1.</label>
+          <label><input type="checkbox" data-check /> My slides are clear, professional, and easy to follow.</label>
+          <label><input type="checkbox" data-check /> I can explain the business and UX value confidently.</label>
+        </div>
+      </section>
+
+      <section id="task-2-q1" class="section-panel">
+        <p class="eyebrow">Task 2 | Q1</p>
+        <h2>Professional Presentation</h2>
+        <div class="assessment-text">
+          <div class="guide-section-label"><span>Assessment Text</span></div>
+          <blockquote>
+            You must prepare and deliver a professional presentation that communicates your full project. Your presentation must cover: introduction, the problem, your UX solution, strategic partner, strategy overview, objectives, value of your solution, risks and barriers, long-term relationship, promotion strategy, and questions and discussion. You must deliver a recorded presentation (8-12 minutes) and show your screen and yourself presenting. You must submit your presentation file and your video recording.
+          </blockquote>
+        </div>
+        <div class="explanation-block">
+          <div class="guide-section-label"><span>Explanation</span></div>
+          <p>Use a simple presentation structure. One idea per slide is enough. Your goal is to sound like a UX designer explaining a realistic business strategy to Uber stakeholders, not reading long paragraphs from the screen.</p>
+          <div class="method-table">
+            <div><strong>Start</strong><span>Title, purpose, problem, and why it matters.</span></div>
+            <div><strong>Middle</strong><span>Solution, partner, implementation, objectives, and value.</span></div>
+            <div><strong>Finish</strong><span>Risks, long-term relationship, promotion strategy, questions, and conclusion.</span></div>
+          </div>
+        </div>
+        <div class="evidence-card">
+          <h3>Evidence Checklist</h3>
+          <label><input type="checkbox" data-check /> My presentation includes all required content areas.</label>
+          <label><input type="checkbox" data-check /> I identified at least two risks or barriers and explained how to address them.</label>
+          <label><input type="checkbox" data-check /> I explained how Uber will maintain the partner relationship over time.</label>
+          <label><input type="checkbox" data-check /> I included a promotion strategy for drivers, stakeholders, and the wider market.</label>
+          <label><input type="checkbox" data-check /> My recording is 8-12 minutes and shows both my slides and myself presenting.</label>
+          <label><input type="checkbox" data-check /> I opened the floor for questions and answered at least two audience questions.</label>
+        </div>
+      </section>
+
+      <section id="submission" class="section-panel compact">
+        <p class="eyebrow">Before You Submit</p>
+        <h2>Final Submission Check</h2>
+        <div class="assessment-text">
+          <div class="guide-section-label"><span>Assessment Text</span></div>
+          <blockquote>
+            You must submit: 1. Written answers for Task 1 (Q1-Q4), 2. Presentation file (PowerPoint or similar), 3. Video recording of your presentation.
+          </blockquote>
+        </div>
+        <div class="evidence-card">
+          <h3>Evidence Checklist</h3>
+          <label><input type="checkbox" data-check /> Task 1 Q1 includes at least 120 words and at least one referenced source.</label>
+          <label><input type="checkbox" data-check /> Task 1 Q2 includes at least 120 words and connects problem, solution, partner, and outcome.</label>
+          <label><input type="checkbox" data-check /> Task 1 Q3 includes at least 150 words, two partner options, comparison, and final justification.</label>
+          <label><input type="checkbox" data-check /> Task 1 Q4 includes three SMART objectives with measures and timeframes.</label>
+          <label><input type="checkbox" data-check /> I submitted the presentation file.</label>
+          <label><input type="checkbox" data-check /> I submitted the video recording with slides and myself visible.</label>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const checks = Array.from(document.querySelectorAll("[data-check]"));
+      const progressBar = document.querySelector("[data-progress-bar]");
+      const progressCount = document.querySelector("[data-progress-count]");
+      const resetButton = document.querySelector("[data-reset]");
+      const printButton = document.querySelector("[data-print]");
+      const navLinks = Array.from(document.querySelectorAll(".sidebar nav a"));
+      const sections = navLinks
+        .map((link) => document.querySelector(link.getAttribute("href")))
+        .filter(Boolean);
+
+      const storageKey = "a50206-understanding-the-ux-workplace-assessment-1-checks";
+
+      function readState() {
+        try {
+          return JSON.parse(localStorage.getItem(storageKey)) || {};
+        } catch {
+          return {};
+        }
+      }
+
+      function writeState() {
+        const state = {};
+        checks.forEach((check, index) => {
+          state[index] = check.checked;
+        });
+        localStorage.setItem(storageKey, JSON.stringify(state));
+      }
+
+      function updateProgress() {
+        const total = checks.length;
+        const done = checks.filter((check) => check.checked).length;
+        const percent = total ? Math.round((done / total) * 100) : 0;
+        if (progressBar) progressBar.style.width = `${percent}%`;
+        if (progressCount) progressCount.textContent = `${done} of ${total} checked`;
+      }
+
+      function hydrateChecks() {
+        const state = readState();
+        checks.forEach((check, index) => {
+          check.checked = Boolean(state[index]);
+          check.addEventListener("change", () => {
+            writeState();
+            updateProgress();
+          });
+        });
+        updateProgress();
+      }
+
+      function resetChecks() {
+        checks.forEach((check) => {
+          check.checked = false;
+        });
+        writeState();
+        updateProgress();
+      }
+
+      function setActiveNav() {
+        const offset = 140;
+        const current = sections.reduce((active, section) => {
+          const top = section.getBoundingClientRect().top;
+          return top <= offset ? section : active;
+        }, sections[0]);
+
+        navLinks.forEach((link) => {
+          link.classList.toggle("active", link.getAttribute("href") === `#${current.id}`);
+        });
+      }
+
+      hydrateChecks();
+      setActiveNav();
+
+      window.addEventListener("scroll", setActiveNav, { passive: true });
+      resetButton?.addEventListener("click", resetChecks);
+      printButton?.addEventListener("click", () => window.print());
+    </script>
+  </body>
+</html>
